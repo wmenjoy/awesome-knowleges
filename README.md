@@ -14,7 +14,7 @@
 在线版本|https://repl.it/
 ## Go
 内容|网址
----|:--:|
+---|--|
 资源|https://github.com/avelino/awesome-go
 # 标准业务知识储备
 
