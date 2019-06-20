@@ -4,7 +4,7 @@
 ## Shell
 
 内容|网址
----|:--|:|
+---|:--:|
 入门|http://mywiki.wooledge.org/BashGuide
 常见问题|http://mywiki.wooledge.org/BashFAQ
 标准|http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html
@@ -14,7 +14,8 @@
 在线版本|https://repl.it/
 ## Go
 内容|网址
----|：--：）
+---|:--:|
+资源|https://github.com/avelino/awesome-go
 # 标准业务知识储备
 
 # 标准架构知识储备
