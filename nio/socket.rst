@@ -6,7 +6,7 @@ Socket 相关知识
 
 1.1 tcp 图与socket
 ~~~~~~~~~~~~~~~~~~
-.. image: tcp%20协议.png
+.. image:: tcp%20协议.png
 tcp 协议
 
 Socket的过程
