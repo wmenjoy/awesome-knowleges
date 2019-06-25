@@ -1,6 +1,7 @@
 
 # 一、Maven 思想
-# 二、常用技巧
+# 二、如何开发Maven 插件
+# 三、常用技巧
 ## 2.1 maven 如何把所有的依赖打成一个jar包
 With Maven 2, the right way to do this is to use the Maven2 Assembly Plugin which has a pre-defined descriptor file for this purpose and that you could just use on the command line:
 ``` bash
