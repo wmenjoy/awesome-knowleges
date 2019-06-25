@@ -128,6 +128,9 @@ fi
 
 echo `getSubModuleVersion $dir/pom.xml`
 ```
-
+## 2.6 maven 包冲突检测
+``` bash
+mvn -U dependency:tree -Dverbose
+```
 
 
