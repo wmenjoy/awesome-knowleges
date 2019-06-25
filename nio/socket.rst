@@ -10,6 +10,6 @@ Socket 相关知识
 
 Socket的过程
 ~~~~~~~~~~~~~~
-.. image:: CS 模型TCp编程的流程图以及tcp的状态变迁图.png
+.. image:: “CS 模型TCp编程的流程图以及tcp的状态变迁图.png”
 TCP的Socket 如何探活
 -------
