@@ -1,5 +1,9 @@
 
 # 一、Maven 思想
+1、有效的管理软件项目的生命周期，（Snapshot，非Snapshot)，管理Java的package依赖
+2、依赖传递思想
+
+待补充
 # 二、如何开发Maven 插件
 # 三、常用技巧
 ## 2.1 maven 如何把所有的依赖打成一个jar包
