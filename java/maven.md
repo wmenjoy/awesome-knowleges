@@ -93,7 +93,7 @@ maven enforcer:enforce
    /usr/local/share/maven/apache-maven-3.5.2/bin/mvn -U org.codehaus.mojo:versions-maven-plugin:2.1:set -DremoveSnapshot=true -DprocessAllModules=true -DnewVersion=$noSnapshotVersion versions:use-releases
 
 ```
-其中 noSnapshotVersion 为自定义的version字段, 可结合下面脚本，自动获取当前的版本号
+其中 noSnapshotVersion 为自定义的version字段, 可参考[如何获取mavne版本号]()，自动获取当前的版本号
 ## 2.5 如何获取maven的版本号
 ``` bash
 #!/bin/sh
