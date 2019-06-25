@@ -4,12 +4,14 @@ Socket 相关知识
 一、概述
 -----------------------
 
-1.1 tcp 图
+1.1 tcp 图与socket
 ~~~~~~~~~~~~~~~~~~
-.. image: https://images2015.cnblogs.com/blog/733402/201601/733402-20160106212015200-534370991.png
+.. image: tcp%20协议.png
+tcp 协议
 
 Socket的过程
 ~~~~~~~~~~~~~~
 .. image:: CS%20模型TCp编程的流程图以及tcp的状态变迁图.png
+Socket 相关过程
 TCP的Socket 如何探活
 -------
