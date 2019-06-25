@@ -128,9 +128,25 @@ fi
 
 echo `getSubModuleVersion $dir/pom.xml`
 ```
-## 2.6 maven 包冲突检测
+## 2.6 Maven 包冲突检测
 ``` bash
 mvn -U dependency:tree -Dverbose
 ```
-
-
+## 2.7 Maven 如何和Sonar 集成
+在settings.xml 文件profile下增加
+``` xml
+        <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  https://${sonar.uri}
+                </sonar.host.url>
+                <sonar.login>${loging_acess}</sonar.login>
+                <sonar.java.source>1.8</sonar.java.source>
+                <sonar.scm.provider>git</sonar.scm.provider>
+                <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+            </properties>
+```
+然后，使用
+```bash
+mvn sonar:sonar
+```
