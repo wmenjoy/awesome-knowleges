@@ -1,6 +1,7 @@
 
 # 一、Maven 思想
 1、有效的管理软件项目的生命周期，（Snapshot，非Snapshot)，管理Java的package依赖
+
 2、依赖传递思想
 
 待补充
@@ -155,3 +156,4 @@ mvn -U dependency:tree -Dverbose
 ```bash
 mvn sonar:sonar
 ```
+参考：[老黄的sonarqube分享](https://github.com/bingoohuang/blog/issues/67)
