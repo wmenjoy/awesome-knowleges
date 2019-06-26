@@ -4,6 +4,8 @@ Socket 相关知识
 
 tcp 协议
 
+socket编程流程及tcp状态变迁
+-------------------------
 .. figure:: CS%20模型TCp编程的流程图以及tcp的状态变迁图.png 
    
 
