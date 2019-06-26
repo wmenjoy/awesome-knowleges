@@ -157,3 +157,7 @@ mvn -U dependency:tree -Dverbose
 mvn sonar:sonar
 ```
 参考：[老黄的sonarqube分享](https://github.com/bingoohuang/blog/issues/67)
+## 2.8 Maven 上传本地文件到Maven 仓库
+``` bash
+mvn deploy:deploy-file -Dfile=./${jarFile} -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackaging=jar -Durl=${nexus.url} -DrepositoryId=${repositoryId}
+```
