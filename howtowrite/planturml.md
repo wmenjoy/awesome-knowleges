@@ -27,3 +27,6 @@ ConfigCenter --> VersionableObject
 ``` md
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/nio/rpc.txt)
 ```
+效果如下
+![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/nio/rpc.txt)
+
