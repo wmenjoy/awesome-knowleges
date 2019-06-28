@@ -1,0 +1,18 @@
+@startuml
+
+class VersionableObject{
+    + String  version;
+    + String key;
+    + V value;
+
+}
+
+
+class ConfigCenter{
+  + String getVersion(String key)
+  + V getValue(String key)
+  + boolean update(key, V value)
+}
+ConfigCenter --> VersionableObject
+
+@enduml
