@@ -1,7 +1,8 @@
 # 安装
 # 使用手册
 
-# github使用plantum1、创建单独的文件rpc.txt，假如路径为wmenjoy/awesome-knowleges/master/nio/rpc.txt 简单的例子如下
+# github使用plantum
+1、创建单独的文件rpc.txt，假如路径为wmenjoy/awesome-knowleges/master/nio/rpc.txt 简单的例子如下
 ```java
 @startuml
 
