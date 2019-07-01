@@ -10,4 +10,5 @@
 6、go sdk
 # go 语言场景
 # 参考资料
-https://github.com/lindzh/leaning-go/tree/master/src/main
+入门：https://github.com/lindzh/leaning-go/tree/master/src/main
+资料：https://github.com/yinggaozhen/awesome-go-cn
