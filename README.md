@@ -33,3 +33,4 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 # 文档技巧
 ## markdown
 [MarkDown 技能](howtowrite/markdown.md)
+[Uml相关](https://github.com/wmenjoy/awesome-knowleges/blob/master/howtowrite/planturml.md)
