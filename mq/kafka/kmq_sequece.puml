@@ -1,0 +1,51 @@
+@startuml
+
+==正常流程==
+autonumber
+Client ->  证书生成服务: 请求证书生成服务
+证书生成服务 -> "MQ Client": 同步MQ信息
+"MQ Client" -> "MQ Server": 发送消息
+"MQ Server" --> "MQ Client": 消息发送成功
+"MQ Client" --> 证书生成服务: 消息发送成功
+证书生成服务 --> Client: 证书生成成功
+
+==发送Mq Server失败==
+autonumber
+
+Client ->  证书生成服务: 请求证书生成服务
+证书生成服务 -> "MQ Client": 同步MQ信息
+"MQ Client" -x "MQ Server": 发送消息
+
+"MQ Client" -> "MQ RetryServer": 发送到重试服务
+
+"MQ RetryServer" --> "MQ RetryServer": 写入数据库或者Redis队列
+
+
+"MQ RetryServer" --> "MQ Client": 消息发送成功
+"MQ Client" --> 证书生成服务: 消息发送成功
+证书生成服务 --> Client: 证书生成成功
+
+
+
+==发送Mq RetryServer失败==
+autonumber
+
+Client ->  证书生成服务: 请求证书生成服务
+证书生成服务 -> "MQ Client": 同步MQ信息
+"MQ Client" -x "MQ Server": 发送消息
+
+"MQ Client" -x "MQ RetryServer": 发送到重试服务
+
+
+"MQ Client" --> "MQ Client": 写日志成功
+
+"MQ Client" --> 证书生成服务: 消息发送成功
+证书生成服务 --> Client: 证书生成成功
+
+"Flume Agent" -> "Kafka":收集日志
+"Kafka" --> "Flume Agent":日志收集成功
+
+"Log Consumer" -> "MQ Server": 发送Mq
+"MQ Server" --> "Log Consumer": 发送消息成功
+
+@enduml
