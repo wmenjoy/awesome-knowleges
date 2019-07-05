@@ -7,10 +7,12 @@
 **SSH/plink命令的基本资料：**
 
 首先，认识下这三个非常强大的命令：
+``` bash
+> ssh -C -f -N -g -L listen_port:DST_Host:DST_port user@Tunnel_Host
+> ssh -C -f -N -g -R listen_port:DST_Host:DST_port user@Tunnel_Host
 
-> ssh \-C \-f \-N \-g \-L listen\_port:DST\_Host:DST\_port user@Tunnel\_Host
-> ssh \-C \-f \-N \-g \-R listen\_port:DST\_Host:DST\_port user@Tunnel\_Host
-> ssh \-C \-f \-N \-g \-D listen\_port user@Tunnel\_Host
+> ssh -C -f -N -g -D listen_port user@Tunnel_Host
+```
 
 相关参数的解释：
 \-f Fork into background after authentication.
