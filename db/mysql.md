@@ -114,3 +114,5 @@ mysql>
 * 提供单独不使用新的验证方式降级
 ## 2、Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
 * 更新驱动，或者mysql降级
+## 3. mysql 5.8清理
+* /tmp //usr/local/Cellar/mysql@5.8 /usr/local/var/mysq
