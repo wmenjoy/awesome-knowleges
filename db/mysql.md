@@ -37,6 +37,6 @@ mysql>
 
 # Mysql5.8数据库 不兼容
 ## 1、用户认证方式变更
-## 提供单独不使用新的验证方式降级
+* 提供单独不使用新的验证方式降级
 ## 2、Caused by: java.sql.SQLException: Could not retrieve transation read-only status server
 * 更新驱动，或者mysql降级
