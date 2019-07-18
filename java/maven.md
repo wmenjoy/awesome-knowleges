@@ -191,6 +191,7 @@ mvn deploy:deploy-file -Dfile=./${jarFile} -DgroupId=${groupId} -DartifactId=${a
             <!--<requireMavenVersion>
                 <version>3.0.4</version>
             </requireMavenVersion>-->
+           <dependencyConvergence/>
             <requireJavaVersion>
                 <version>1.6.0</version>
             </requireJavaVersion>
@@ -253,6 +254,15 @@ Found Banned Dependency: org.jboss.netty:netty:jar:3.2.19
 Found Banned Dependency: org.apache.thrift:libthrift:jar:0.9.3
 Use 'mvn dependency:tree' to locate the source of the banned dependencies.
 ```
+### 2.9.3 解决办法
+最后根据插件排查下来的信息，一个个排除掉存在冲突的jar包即可。注意如果是parent pom当中的依赖冲突，要在parent pom中修改，否则无法排除。
+
+福利：使用idea的同学，推荐使用maven helper插件排除冲突，一目了然，很好用。
+### 2.9.4 参考
+https://www.cnblogs.com/f-zhao/p/6961058.html
+http://www.tuicool.com/articles/RfIBfa
+https://github.com/dimitri-koussa/maven-enforcer-duplicate-class-check
+http://www.mojohaus.org/extra-enforcer-rules/banDuplicateClasses.html 
 
 
 
