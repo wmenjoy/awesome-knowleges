@@ -159,5 +159,100 @@ mvn sonar:sonar
 参考：[老黄的sonarqube分享](https://github.com/bingoohuang/blog/issues/67)
 ## 2.8 Maven 上传本地文件到Maven 仓库
 ``` bash
-mvn deploy:deploy-file -Dfile=./${jarFile} -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackaging=jar -Durl=${nexus.url} -DrepositoryId=${repositoryId}
+mvn deploy:deploy-file -Dfile=./${jarFile} -DgroupId=${groupId} -DartifactId=${artifactId} -Dversion=${version} -Dpackaging=jar -Durl=${nexus.url} -DrepositoryId=${repositoryId}'
 ```
+## 2.9 如何检测类冲突
+### 2.9.1 enforcer 插件配置
+``` xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <version>1.4.1-dp-SNAPSHOT</version>
+    <executions>
+        <execution>
+            <id>default-cli</id>
+            <phase>validate</phase>
+            <goals>
+                <goal>enforce</goal>
+            </goals>
+        </execution>
+    </executions>
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>extra-enforcer-rules</artifactId>
+            <version>1.0-beta-4</version>
+        </dependency>
+    </dependencies>
+    <configuration>
+        <!--规则检查不通过就构建失败;Default:false. -->
+        <!--<failFast>true</failFast>-->
+        <rules>
+            <!--<requireMavenVersion>
+                <version>3.0.4</version>
+            </requireMavenVersion>-->
+            <requireJavaVersion>
+                <version>1.6.0</version>
+            </requireJavaVersion>
+            <banDuplicateClasses>
+                <ignoreClasses>
+                    <ignoreClass>javax.*</ignoreClass>
+                    <ignoreClass>org.junit.*</ignoreClass>
+                    <ignoreClass>junit.*</ignoreClass>
+                    <ignoreClass>org.apache.xbean.recipe.*</ignoreClass>
+                    <ignoreClass>org.hamcrest.*</ignoreClass>
+                    <ignoreClass>org.slf4j.*</ignoreClass>
+                    <ignoreClass>org.antlr.runtime.*</ignoreClass>
+                    <ignoreClass>org.apache.commons.lang.*</ignoreClass>
+                    <ignoreClass>org.apache.commons.codec.*</ignoreClass>
+                    <ignoreClass>org.apache.commons.logging.*</ignoreClass>
+                    <ignoreClass>org.codehaus.plexus.component.builder.*</ignoreClass>
+                </ignoreClasses>
+                <findAllDuplicates>true</findAllDuplicates>
+            </banDuplicateClasses>
+            <bannedDependencies>
+                <!--是否检查传递性依赖(间接依赖)-->
+                <searchTransitive>true</searchTransitive>
+                <excludes>
+                    <exclude>org.apache:libthrift</exclude>
+                    <exclude>org.jboss.netty:netty</exclude>
+                    <exclude>org.apache.thrift:libthrift:(,0.8.0),(0.8.0,)</exclude>
+                    <exclude>io.netty:netty:(,3.9.2.Final)</exclude>
+                    <exclude>com.sankuai.octo:mns-invoker:(,1.7.5)</exclude>
+                    <exclude>com.fasterxml.jackson.core:*:(,2.6.0)</exclude>
+                    <exclude>com.google.guava:guava:(,15.0)</exclude>
+                </excludes>
+                <message>some dependency must exclude</message>
+            </bannedDependencies>
+        </rules>
+    </configuration>
+</plugin>
+```
+### 2.9.2 检测冲突命令
+ ``` bas
+ mvn -U clean -Dmaven.test.skip=true enforcer:enforce -DcheckDeployRelease_skip=true
+ ```
+### 2.9.3 结果例子
+
+* 1、存在重复的类的情况
+``` bash
+Found in:
+    org.jboss.netty:netty:jar:3.2.19:compile
+    io.netty:netty:jar:3.9.2.Final:compile
+  Duplicate classes:
+    org/jboss/netty/handler/codec/base64/Base64Decoder.class
+    org/jboss/netty/util/VirtualExecutorService.class
+以下省略
+```
+* 2、不允许的依赖jar包或不允许的依赖版本号：
+``` bash
+[WARNING] Rule 2: org.apache.maven.plugins.enforcer.BannedDependencies failed with message:
+some dependency must exclude
+Found Banned Dependency: org.apache:libthrift:jar:0.6.0
+Found Banned Dependency: org.jboss.netty:netty:jar:3.2.19
+Found Banned Dependency: org.apache.thrift:libthrift:jar:0.9.3
+Use 'mvn dependency:tree' to locate the source of the banned dependencies.
+```
+
+
+
