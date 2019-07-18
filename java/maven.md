@@ -260,8 +260,11 @@ Use 'mvn dependency:tree' to locate the source of the banned dependencies.
 福利：使用idea的同学，推荐使用maven helper插件排除冲突，一目了然，很好用。
 ### 2.9.4 参考
 https://www.cnblogs.com/f-zhao/p/6961058.html
+
 http://www.tuicool.com/articles/RfIBfa
+
 https://github.com/dimitri-koussa/maven-enforcer-duplicate-class-check
+
 http://www.mojohaus.org/extra-enforcer-rules/banDuplicateClasses.html 
 
 
