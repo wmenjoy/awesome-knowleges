@@ -21,7 +21,7 @@ ansible被定义为配置管理工具,配置管理工具通常具有以下功能
 | 命令行执行           | 不支持，大师可以通过配置模块实现                                      | 支持                                       | 支持                                              |
 # Ansible 是什么样子的
 ## 架构图
-![架构图](https://github.com/wmenjoy/awesome-knowleges/blob/master/devos/Ansible1.png?raw=true)
+![架构图](Ansible1.png?raw=true)
 
 上图为ansible的基本架构，从上图可以了解到其由以下部分组成：
 
@@ -33,6 +33,7 @@ ansible被定义为配置管理工具,配置管理工具通常具有以下功能
 * **连接插件（Connectior Plugins）**：ansible基于连接插件连接到各个主机上，虽然ansible是使用ssh连接到各个主机的，但是它还支持其他的连接方法，所以需要有连接插件
 * **主机群（Host Inventory）**：定义ansible管理的主机
 ## 原理图
+![原理图](Ansible2.png)
 
 
 
