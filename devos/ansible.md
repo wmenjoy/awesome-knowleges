@@ -199,7 +199,7 @@ group # 用户组管理
 script # 将本地的脚本在远端服务器运行
 setup # 该模块主要用于收集信息，是通过调用facts组件来实现的,以变量形式存储主机上的信息
 ```
-4. ansible -s <module-name>可以查看指定module的用法,或者参看官方帮助文档:
+4. ansible-doc -s <module-name>可以查看指定module的用法,或者参看官方帮助文档:
 ```bash
     Usage: ansible <host-pattern> [options]
 
@@ -222,4 +222,21 @@ ansible: error: no such option: -s
                                a non-idempotent
                                way. The task
                                could end up with
+```
+## 基于playbook 执行
+playbook是由一个或多个“play”组成的列表。play的主要功能在于将事先归并为一组的主机装扮成事先通过ansible中的task定义好的角色。从根本上来讲，所谓task无非是调用ansible的一个module。将多个play组织在一个playbook中，即可以让它们联同起来按事先编排的机制同唱一台大戏。
+
+例子如下：
+``` 
+- hosts: master
+  user: root
+  vars:
+    - motd_warning: 'WARNING: Use by master ONLY'
+  tasks:
+    - name: setup a MOTD
+      copy: dest=/etc/motd content="{{ motd_warning }}"
+      notify: say something
+  handlers:
+    - name: say something
+      command: echo "copy OK"
 ```
