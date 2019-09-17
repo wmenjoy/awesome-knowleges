@@ -241,3 +241,5 @@ playbook是由一个或多个“play”组成的列表。play的主要功能在�
       command: echo "copy OK"
 ```
 * 格式
+
+参考https://www.jianshu.com/p/c82737b5485c
