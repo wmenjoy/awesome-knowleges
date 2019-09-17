@@ -243,3 +243,50 @@ playbook是由一个或多个“play”组成的列表。play的主要功能在�
 * 格式
 
 参考https://www.jianshu.com/p/c82737b5485c
+
+* Target section
+定义将要执行playbook的远程主机组
+
+* Variable section
+定义playbook运行时需要使用的变量
+
+* Task section
+定义将要在远程主机上执行的任务列表
+
+* Handler section
+定义task执行完成以后需要调用的任务
+
+* Target section常用参数
+``` java
+hosts：定义远程主机组
+
+user：执行该任务的用户
+
+sudo: 设置为yes的时候，执行任务的时候使用root权限
+
+sudo_user 如果你设置用户为tshare365，那么你执行的时候会使用tshare365用户的权限
+
+connection 通过什么方式连接到远程主机，默认是ssh
+
+gather_facks 是否启用在远程主机执行setup模块，默认是会执行的，可用同setup模块获取远程主机的信息，在定义变量的时候使用
+```
+
+* Variabler section常用参数
+vars  定义格式 变量名:变量值
+
+vars_files  指定变量文件
+
+vars_prompt  用户交互模式自定义变量
+
+setup 模块去远程主机的值
+
+* Task ssection
+name：输出到屏幕的信息
+
+action：定义执行的动作调用ansible的模块例如：yum name=http state=installed就是安装apache服务
+
+copy：复制本地文件到远程主机
+
+template：复制本地文件到远程主机但是他可以在本地文件中调用变量
+
+service ：定义服务的状态
