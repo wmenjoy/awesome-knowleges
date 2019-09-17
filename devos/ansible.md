@@ -159,7 +159,7 @@ ansible <host-pattern> [-f forks] [-m module_name] [-a args]
 
 ```
 例如
-* 定义好inventory后可以调用ping模块来检测网络是否可达
+1. 定义好inventory后可以调用ping模块来检测网络是否可达
 ``` shell
 # ansible all -m ping
 192.168.57.22 | SUCCESS => {
@@ -170,4 +170,56 @@ ansible <host-pattern> [-f forks] [-m module_name] [-a args]
     "changed": false, 
     "ping": "pong"
 }
+```
+2. 使用command模块远程执行命令:
+``` bash
+# 如果/etc/passwd文件存在就执行grep命令
+# ansible all -m command -a 'removes=/etc/passwd grep root /etc/passwd' 
+192.168.57.22 | SUCCESS | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+
+192.168.57.11 | SUCCESS | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+```
+3. 可以通过ansible-doc -l列出所有可用的module,常用的module有:
+```bash
+ping # 主机连通性测试
+command # 在远程主机上执行命令,不支持管道
+shell # 在远程主机上调用shell解析器,支持管道命令个
+copy # 用于将文件复制到远程主机,支持设定内容和修改权限.
+file # 创建文件,创建连接文件,删除文件等
+fetch # 从远程复制文件到本地
+cron # 管理cron计划任务
+yum # 用于模块的安装
+service # 管理服务
+user # 管理用户账号
+group # 用户组管理
+script # 将本地的脚本在远端服务器运行
+setup # 该模块主要用于收集信息，是通过调用facts组件来实现的,以变量形式存储主机上的信息
+```
+4. ansible -s <module-name>可以查看指定module的用法,或者参看官方帮助文档:
+```bash
+    Usage: ansible <host-pattern> [options]
+
+- name: Manages packages with the `yum' package manager
+  yum:
+      allow_downgrade:       # Specify if the named package and version is
+ansible: error: no such option: -s
+- name: Manages packages with the `yum' package manager
+  yum:
+      allow_downgrade:       # Specify if the named package and version is
+                               allowed to
+                               downgrade a maybe
+                               already installed
+                               higher version of
+                               that package.
+                               Note that setting
+                               allow_downgrade=T
+                               rue can make this
+                               module behave in
+                               a non-idempotent
+                               way. The task
+                               could end up with
 ```
