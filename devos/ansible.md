@@ -257,7 +257,7 @@ playbook是由一个或多个“play”组成的列表。play的主要功能在�
 定义task执行完成以后需要调用的任务
 
 * Target section常用参数
-``` java
+``` properties
 hosts：定义远程主机组
 
 user：执行该任务的用户
@@ -272,21 +272,17 @@ gather_facks 是否启用在远程主机执行setup模块，默认是会执行�
 ```
 
 * Variabler section常用参数
+``` properties
 vars  定义格式 变量名:变量值
-
 vars_files  指定变量文件
-
 vars_prompt  用户交互模式自定义变量
-
 setup 模块去远程主机的值
-
+```
 * Task ssection
+```properties
 name：输出到屏幕的信息
-
 action：定义执行的动作调用ansible的模块例如：yum name=http state=installed就是安装apache服务
-
 copy：复制本地文件到远程主机
-
 template：复制本地文件到远程主机但是他可以在本地文件中调用变量
-
 service ：定义服务的状态
+```
