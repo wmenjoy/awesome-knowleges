@@ -26,10 +26,10 @@ ansible被定义为配置管理工具,配置管理工具通常具有以下功能
 上图为ansible的基本架构，从上图可以了解到其由以下部分组成：
 
 * **核心**：ansible
-* ** 核心模块**（Core Modules）：这些都是ansible自带的模块
-* ** 扩展模块**（Custom Modules）：如果核心模块不足以完成某种功能，可以添加扩展模块
-* ** 插件（Plugins）**：完成模块功能的补充
-* ** 剧本（Playbooks）**：ansible的任务配置文件，将多个任务定义在剧本中，由ansible自动执行
+* **核心模块（Core Modules）**：这些都是ansible自带的模块
+* **扩展模块（Custom Modules）**：如果核心模块不足以完成某种功能，可以添加扩展模块
+* **插件（Plugins）**：完成模块功能的补充
+* **剧本（Playbooks）**：ansible的任务配置文件，将多个任务定义在剧本中，由ansible自动执行
 * **连接插件（Connectior Plugins）**：ansible基于连接插件连接到各个主机上，虽然ansible是使用ssh连接到各个主机的，但是它还支持其他的连接方法，所以需要有连接插件
 * **主机群（Host Inventory）**：定义ansible管理的主机
 ## 原理图
