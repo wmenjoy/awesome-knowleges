@@ -147,3 +147,27 @@ ansible_ssh_private_key_file # ssh 连接使用的私钥
 ansible_shell_type # 指定连接对端的shell类型, 默认sh,支持csh,fish
 ansible_python_interpreter # 指定对端使用的python编译器的路径
 ```
+
+# 运行
+## ad-hoc 模式运行
+ansible通过ssh实现配置管理、应用部署、任务执行等功能，因此，需要事先配置ansible端能基于密钥认证的方式联系各被管理节点。
+
+ansible命令使用语法:
+```bash
+ansible <host-pattern> [-f forks] [-m module_name] [-a args]
+    -m module：默认为command
+
+```
+例如
+* 定义好inventory后可以调用ping模块来检测网络是否可达
+``` shell
+# ansible all -m ping
+192.168.57.22 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+192.168.57.11 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+```
