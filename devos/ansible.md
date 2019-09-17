@@ -70,3 +70,80 @@ ansible主要的管理方式,通过多个task的集合完成一类功能,可以�
 ### ansible执行流程
 ![执行过程](6078939-2d6e5a817186480d.webp)
 
+# Ansible的安装
+## 源代码安装
+忽略
+## rpm包安装
+忽略
+# 配置文件
+## ansible配置文件查找顺序
+* 检查环境变量ANSIBLE_CONFIG指向的路径文件(export ANSIBLE_CONFIG=/etc/ansible.cfg)；
+* ~/.ansible.cfg，检查当前目录下的ansible.cfg配置文件；
+* /etc/ansible.cfg检查etc目录的配置文件。
+## ansible配置文件
+常用参数
+``` properties
+    inventory = /etc/ansible/hosts      #这个参数表示资源清单inventory文件的位置
+    library = /usr/share/ansible        #指向存放Ansible模块的目录，支持多个目录方式，只要用冒号（：）隔开就可以
+    forks = 5       #并发连接数，默认为5
+    sudo_user = root        #设置默认执行命令的用户
+    remote_port = 22        #指定连接被管节点的管理端口，默认为22端口，建议修改，能够更加安全
+    host_key_checking = False       #设置是否检查SSH主机的密钥，值为True/False。关闭后第一次连接不会提示配置实例
+    timeout = 60        #设置SSH连接的超时时间，单位为秒
+    log_path = /var/log/ansible.log     #指定一个存储ansible日志的文件（默认不记录日志）
+
+```
+# Inventory
+nsible的主要功用在于批量主机操作，为了便捷地使用其中的部分主机，可以在inventory file中将其分组命名。默认的inventory file为/etc/ansible/hosts。
+inventory file可以有多个，且也可以通过Dynamic Inventory来动态生成。
+## 文件格式
+* inventory文件遵循INI文件风格，中括号中的字符为组名。可以将同一个主机同时归并到多个不同的组中；此外，当如若目标主机使用了非默认的SSH端口，还可以在主机名称之后使用冒号加端口号来标明。
+```ini
+ntp.com
+
+[webservers]
+www1.com:2222
+www2.com
+
+[dbservers]
+db1.com
+db2.com
+db3.com
+```
+* 如果名字类似，可以采用列表的方式
+```ini
+[webservers]
+www[01:50].example.com
+
+[databases]
+db-[a:f].example.com
+```
+* 主机变量: 可以在inventory中定义主机时为其添加主机变量以便于在playbook中使用。例如：
+```ini
+[webservers]
+www1.com http_port=80 maxRequestsPerChild=808
+www2.com http_port=8080 maxRequestsPerChild=909
+```
+* 组变量
+```
+[webservers]
+www1.com
+www2.com
+
+[webservers:vars]
+ntp_server=ntp.com
+nfs_server=nfs.com
+```
+## 其他参数
+ansible基于ssh连接inventory中指定的远程主机时，还可以通过参数指定其交互方式；这些参数如下所示：
+```
+ansible_ssh_host # 远程主机
+ansible_ssh_port # 指定远程主机ssh端口
+ansible_ssh_user # ssh连接远程主机的用户,默认root
+ansible_ssh_pass # 连接远程主机使用的密码,在文件中明文,建议使用--ask-pass或者使用SSH keys
+ansible_sudo_pass # sudo密码, 建议使用--ask-sudo-pass
+ansible_connection # 指定连接类型: local, ssh, paramiko
+ansible_ssh_private_key_file # ssh 连接使用的私钥
+ansible_shell_type # 指定连接对端的shell类型, 默认sh,支持csh,fish
+ansible_python_interpreter # 指定对端使用的python编译器的路径
+```
