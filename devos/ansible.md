@@ -245,29 +245,28 @@ playbook是由一个或多个“play”组成的列表。play的主要功能在�
 参考https://www.jianshu.com/p/c82737b5485c
 
 * Target section
+
 定义将要执行playbook的远程主机组
 
 * Variable section
+
 定义playbook运行时需要使用的变量
 
 * Task section
+
 定义将要在远程主机上执行的任务列表
 
 * Handler section
+
 定义task执行完成以后需要调用的任务
 
 * Target section常用参数
 ``` properties
 hosts：定义远程主机组
-
 user：执行该任务的用户
-
 sudo: 设置为yes的时候，执行任务的时候使用root权限
-
 sudo_user 如果你设置用户为tshare365，那么你执行的时候会使用tshare365用户的权限
-
 connection 通过什么方式连接到远程主机，默认是ssh
-
 gather_facks 是否启用在远程主机执行setup模块，默认是会执行的，可用同setup模块获取远程主机的信息，在定义变量的时候使用
 ```
 
