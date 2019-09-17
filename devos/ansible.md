@@ -21,7 +21,7 @@ ansible被定义为配置管理工具,配置管理工具通常具有以下功能
 | 命令行执行           | 不支持，大师可以通过配置模块实现                                      | 支持                                       | 支持                                              |
 # Ansible 是什么样子的
 ## 架构图
-[架构图](https://github.com/wmenjoy/awesome-knowleges/blob/master/devos/Ansible1.png?raw=true)
+![架构图](https://github.com/wmenjoy/awesome-knowleges/blob/master/devos/Ansible1.png?raw=true)
 
 上图为ansible的基本架构，从上图可以了解到其由以下部分组成：
 
