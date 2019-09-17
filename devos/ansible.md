@@ -240,3 +240,4 @@ playbook是由一个或多个“play”组成的列表。play的主要功能在�
     - name: say something
       command: echo "copy OK"
 ```
+* 格式
