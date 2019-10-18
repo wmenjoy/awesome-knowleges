@@ -113,3 +113,8 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 }
 ```
 此时无须配置任何配置，默认会走此BeanNameGenerator。
+
+# 参考
+[1、Bean Name Id 覆盖的探讨](https://cloud.tencent.com/developer/article/1497702)
+
+
