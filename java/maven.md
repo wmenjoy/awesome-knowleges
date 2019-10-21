@@ -265,7 +265,41 @@ http://www.tuicool.com/articles/RfIBfa
 
 https://github.com/dimitri-koussa/maven-enforcer-duplicate-class-check
 
-http://www.mojohaus.org/extra-enforcer-rules/banDuplicateClasses.html 
+http://www.mojohaus.org/extra-enforcer-rules/banDuplicateClasses.html
+
+## 2.10 快速修改maven 各个模块的版本号
+maven 有多个子项目的时候， 修改每一个子项目的版本号会个别麻烦
+
+为了简化这个过程，可以使用以下约束
+* 1、各个子模块尽量使用公用的父类
+* 2、项目中各个子模块之间的依赖使用${project.version}
+* 3、子模块除了parent指定父的依赖pom版本，本身不要使用自定义版本
+
+原因：这样只需要修改父目录的版本号，以及各个子目录的依赖的parent的版本，就不需要再做其他的修改，
+
+同时为了快速修改版本，可以使用maven的 Versions maven plugin 插件
+## 2.10.1 修改版本
+```bash
+mvn versions:set -DoldVersion=* -DnewVersion=1.0.1-SNAPSHOT -DprocessAllModules=true -DallowSnapshots=true
+```
+可以直接简化为
+```bash
+mvn versions:set -DnewVersion=1.0.1-SNAPSHOT
+```
+
+## 2.10.2 提交修改
+```bash
+mvn versions:commit
+```
+## 2.10.3 回退修改
+```bash
+mvn versions:revert
+```
+
+
+
+
+
 
 
 
