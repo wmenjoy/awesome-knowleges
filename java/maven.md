@@ -278,7 +278,7 @@ maven 有多个子项目的时候， 修改每一个子项目的版本号会个�
 原因：这样只需要修改父目录的版本号，以及各个子目录的依赖的parent的版本，就不需要再做其他的修改，
 
 同时为了快速修改版本，可以使用maven的 Versions maven plugin 插件
-## 2.10.1 修改版本
+### 2.10.1 修改版本
 ```bash
 mvn versions:set -DoldVersion=* -DnewVersion=1.0.1-SNAPSHOT -DprocessAllModules=true -DallowSnapshots=true
 ```
@@ -287,11 +287,11 @@ mvn versions:set -DoldVersion=* -DnewVersion=1.0.1-SNAPSHOT -DprocessAllModules=
 mvn versions:set -DnewVersion=1.0.1-SNAPSHOT
 ```
 
-## 2.10.2 提交修改
+### 2.10.2 提交修改
 ```bash
 mvn versions:commit
 ```
-## 2.10.3 回退修改
+### 2.10.3 回退修改
 ```bash
 mvn versions:revert
 ```
