@@ -12,3 +12,4 @@
 ## 8、Session存储
 ## 9、消息系统
 # Redis的存储结构
+https://juejin.im/post/5dacfe2fe51d452b32181efb
