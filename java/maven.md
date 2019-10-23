@@ -296,6 +296,25 @@ mvn versions:commit
 mvn versions:revert
 ```
 
+项目最重要的三件事，1.如何快速生成一个代码，2、如何根据生成的代码快速开发，3、如何根据编写后的代码，生成符合公司规范的jar包
+## 2.11 如何生成项目脚手架？
+Maven的插件 archetype 系列，可以帮助我们从一个已有的项目生成模板工程。从模板工程生成我们自己的项目
+## 2.11.1 使用archetype:create-from-project 生成项目
+1.通过cmd到项目的所在路径，执行 mvn archetype:create-from-project
+
+2.执行第一步后，项目中会产生target目录，cd到target\generated-sources\archetype下，执行mvn install
+
+执行这个后，这个项目的archetype就会被保存到你maven的本地仓库；
+## 2.11.2 使用archetype:generator
+```shell
+mvn archetype:generate -Dpackage=cn.org.my.package -DgroupId=cn.org.my.group -DartifactId=bjca-demo-jar -Dversion=1.0.0-SNAPSHOT -DarchetypeGroupId=cn.org.my.groupId -DarchetypeArtifactId=cn-my-archetype -DarchetypeVersion=my-version-jar.RELEASE -X -DarchetypeCatalog=local
+```
+
+## 2.11.3 参考
+[archetype:create-from-project munual](http://maven.apache.org/archetype/maven-archetype-plugin/create-from-project-mojo.html)
+
+
+## 2.22 如何自定义打包软件
 
 
 
