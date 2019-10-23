@@ -305,6 +305,12 @@ Maven的插件 archetype 系列，可以帮助我们从一个已有的项目生�
 2.执行第一步后，项目中会产生target目录，cd到target\generated-sources\archetype下，执行mvn install
 
 执行这个后，这个项目的archetype就会被保存到你maven的本地仓库；
+
+问题：
+*1、项目的子项目包需要修改 适应 __rootArtifactId__代替
+*2、内部子项目之间的依赖需要调整为， ${groupId} ${rootArtifactId}+对应报名
+
+
 ### 2.11.2 使用archetype:generator
 ```shell
 mvn archetype:generate -Dpackage=cn.org.my.package -DgroupId=cn.org.my.group -DartifactId=bjca-demo-jar -Dversion=1.0.0-SNAPSHOT -DarchetypeGroupId=cn.org.my.groupId -DarchetypeArtifactId=cn-my-archetype -DarchetypeVersion=my-version-jar.RELEASE -X -DarchetypeCatalog=local
