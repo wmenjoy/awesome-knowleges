@@ -307,9 +307,9 @@ Maven的插件 archetype 系列，可以帮助我们从一个已有的项目生�
 执行这个后，这个项目的archetype就会被保存到你maven的本地仓库；
 
 问题：
-*1、项目的子项目包需要修改 适应 __rootArtifactId__代替
+* 1、项目的子项目包需要修改 适应 __rootArtifactId__代替
 
-*2、内部子项目之间的依赖需要调整为， ${groupId} ${rootArtifactId}+对应报名
+* 2、内部子项目之间的依赖需要调整为， ${groupId} ${rootArtifactId}+对应报名
 
 
 ### 2.11.2 使用archetype:generator
