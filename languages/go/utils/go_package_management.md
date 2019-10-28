@@ -67,7 +67,7 @@ export CGO_ENABLED=0
 go build -mod=vendor -a -v -o app main.go
 ```
 
-##一个特别的需求
+## 一个特别的需求
 
 前提：配置好了go module和proxy
 
