@@ -354,6 +354,8 @@ class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->
 [org.bouncycastle.asn1.ASN1EncodableVector->org.bouncycastle.asn1.DEREncodableVector-
 >org.bouncycastle.asn1.ASN1EncodableVector]
 ```
+但正常情况同一个项目下，如果包出现包依赖，编译器都会直接报错，根本打包不了。怀疑有可能是包冲突，
+通过对类org.bouncycastle.asn1.ASN1EncodableVector，发现，这个类包含在两个包中bcprov-ext-jdk15on:1.48和bcprov-jdk15on:1.46， 分析两个jar包的依赖结构发现两个包目录
 
 
 
