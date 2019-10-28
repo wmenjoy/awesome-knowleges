@@ -324,6 +324,29 @@ mvn archetype:generate -Dpackage=cn.org.my.package -DgroupId=cn.org.my.group -Da
 ## 2.22 如何自定义打包软件
 
 
+# 四、Maven 实际案例解析
+## 4.1、包冲突导致的循环依赖
+### 4.1.1 现场
+在一次服务升级部署到tomcat 8的时候，tomcat 报以下错误：
+```
+Caused by: java.lang.IllegalStateException: Unable to complete the scan for annotations for web application [/ra] due to a StackOverflowError. Possible root causes include a too low setting for -Xss and illegal cyclic inheritance dependencies. The class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->org.bouncycastle.asn1.DEREncodableVector->org.bouncycastle.asn1.ASN1EncodableVector]
+		at org.apache.catalina.startup.ContextConfig.checkHandlesTypes(ContextConfig.java:2116)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2054)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:2000)
+		at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1970)
+		at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1923)
+		at org.apache.catalina.startup.ContextConfig.processClasses(ContextConfig.java:1230)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1134)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:769)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5134)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+		... 10 more
+```
+
+### 4.1.2 分析
+根据 以上
 
 
 
