@@ -359,7 +359,7 @@ class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->
 
 ### 4.1.3 解决
 跟业务同学沟通，删除掉bcprov-jdk15on:1.46，测试，tomcat 正常启动，需要进行功能的全面回归测试
-## 4.1.4 后续改进
+### 4.1.4 后续改进
 * 1、 使用Maven插件，加入类冲突，包冲突的强制校验，辅助业务开发同学及时发现问题
 * 2、对于类冲突，包冲突的解决方案，参考maven常用技巧
 
