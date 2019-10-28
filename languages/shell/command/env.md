@@ -1,4 +1,4 @@
-# 命令间接:
+# 命令描述:
 ## Linux:的描述
 ```
 env - run a program in a modified environment
