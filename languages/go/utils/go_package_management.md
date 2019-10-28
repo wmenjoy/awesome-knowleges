@@ -92,3 +92,6 @@ go build -mod=vendor -a -v -o app main.go
 （2）在需要非内网的包时，直接通过go的proxy，需要内网时，关闭go proxy，通过git的配置来指向正确的连接
 
 （3）一个比较偏门的方法是修改go源码，改变go get的逻辑，让它通过代码逻辑可以分别使用git和proxy拉取代码，这个没有找到案例也没有尝试过，只是要给猜想假设
+
+# 参考
+[1、go mod 和go vendor](https://studygolang.com/articles/18887?fr=sidebar)
