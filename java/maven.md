@@ -355,7 +355,13 @@ class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->
 >org.bouncycastle.asn1.ASN1EncodableVector]
 ```
 但正常情况同一个项目下，如果包出现包依赖，编译器都会直接报错，根本打包不了。怀疑有可能是包冲突，
-通过对类org.bouncycastle.asn1.ASN1EncodableVector，发现，这个类包含在两个包中bcprov-ext-jdk15on:1.48和bcprov-jdk15on:1.46， 分析两个jar包的依赖结构发现两个包目录
+通过对类org.bouncycastle.asn1.ASN1EncodableVector，发现，这个类包含在两个包中bcprov-ext-jdk15on:1.48和bcprov-jdk15on:1.46， 分析两个jar包的依赖结构发现两个包的java package基本相同，单两个包的版本不一致，应该是bouncycastle在1.48或者1.47进行了拆包，然后依赖的时候，有部分版本没有升级，导致的这一高，一低两个版本的出现。两个类冲突冲突。
+
+### 4.1.3 解决
+跟业务同学沟通，删除掉bcprov-jdk15on:1.46，测试，tomcat 正常启动，需要进行功能的全面回归测试
+## 4.1.4 后续改进
+* 1、 使用Maven插件，加入类冲突，包冲突的强制校验，辅助业务开发同学及时发现问题
+* 2、对于类冲突，包冲突的解决方案，参考maven常用技巧
 
 
 
