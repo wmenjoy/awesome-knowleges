@@ -24,7 +24,7 @@ DESCRIPTION
      The echo utility writes any specified operands, separated by single blank (` ') characters and fol-
      lowed by a newline (`\n') character, to the standard output.
      
-     only -n option a supported to do not print the trailing newline character
+     only -n option is supported to do not print the trailing newline character
      
      echo command default enables the interpretation of backslash escapes. 
 ```
