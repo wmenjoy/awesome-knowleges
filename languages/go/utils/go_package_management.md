@@ -67,4 +67,28 @@ export CGO_ENABLED=0
 go build -mod=vendor -a -v -o app main.go
 ```
 
+##一个特别的需求
 
+前提：配置好了go module和proxy
+
+需求：在内网有一个gitlab之类的代码库，需要下载该代码库的依赖包
+
+问题：
+
+（1）在配置了proxy的时候，所有的go get都从代理服务器下载，不再从本地使用git，也就无法从内网拉取代码
+
+（2）在内部gitlab中的包，有可能在项目中使用“github.com/***”或者其他路径引用，go get的时候就会从引用路径找到如“github.com”的地址去使用git拉取代码，导致拉取失败
+
+分析：
+
+（1）针对问题一，可以通过在内网搭设可访问google.golang.org等网址的代理服务器，如果无法访问，也可以通过再走一层代理，即如果不是内网请求就代理到 https://goproxy.io、https://github.com/gomods/athens 或者自己用国外vps搭建的
+
+（2）针对问题二，可以使用代理，相当于在（1）的方案上自定义代理规则；也可以通过git config配置指定url替换，如 git config --global url."git@.com:".insteadOf "https://github.com/***"
+
+方案：
+
+（1）通过在内网搭设代理服务器，自定义代理规则，可以优雅地解决这两个问题，但是需要搭建服务器，一来过程麻烦，二来不一定条件允许（比如公司内网）
+
+（2）在需要非内网的包时，直接通过go的proxy，需要内网时，关闭go proxy，通过git的配置来指向正确的连接
+
+（3）一个比较偏门的方法是修改go源码，改变go get的逻辑，让它通过代码逻辑可以分别使用git和proxy拉取代码，这个没有找到案例也没有尝试过，只是要给猜想假设
