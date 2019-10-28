@@ -29,7 +29,8 @@ DESCRIPTION
      echo command default enables the interpretation of backslash escapes. 
 ```
 ## 兼容性
-1、 Mac系统的echo 是内置命令， linux 位于/bin/echo 
+1、 Mac系统的echo 是内置命令， linux 位于/bin/echo
+
 2、两者支持共同的-n命令
 
 # 用途
