@@ -47,8 +47,8 @@ replace (
 edit        编辑go.mod文件
 graph       打印模块依赖图
 init        在当前文件夹下初始化一个新的module, 创建go.mod文件
-tidy        增加丢失的module，去掉未用的module
-vendor      将依赖复制到vendor下,注意依赖需要在import 中声明后才能进行导入
+tidy        增加丢失的module，去掉未用的module 下载到$GOPATH/pkg/mod下
+vendor      将依赖复制到vendor下,注意依赖需要在import中声明后才能进行导入 
 verify      校验依赖
 why         解释为什么需要依赖
 ```
