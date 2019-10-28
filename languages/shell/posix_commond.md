@@ -1,2 +1,2 @@
-* [1、echo](echo.md)
-& [2、env](env.md)
+* [1、echo](command/echo.md)
+* [2、env](command/env.md)
