@@ -20,3 +20,44 @@ func ${funcName}(${varName} ${varType}, ...) (${returnName} ${returnType}){
 }
 
 ```
+# Defer
+defer的语句，实在函数返回的时候执行,类似于java的finally
+```go
+
+import "fmt"
+
+func main() {
+	defer fmt.Println("world")
+
+	fmt.Println("hello")
+}
+
+```
+## 多个defer
+defer 是使用栈来存储， 所以后申请的，先调用
+``` go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
+}
+
+```
+result:
+```shell
+counting
+done
+2
+1
+0
+```
+
+
