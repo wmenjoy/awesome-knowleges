@@ -34,6 +34,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 入门|[Linux大纲](https://blog.csdn.net/CSDN___LYY/article/details/80810403)|
 # 分布式
 ## 容器
+[容器设计模式](http://dockone.io/article/9290)
 ## MQ
 内容|网址
 kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[存储结构](https://blog.csdn.net/CSDN___LYY/article/details/85696954)
