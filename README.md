@@ -46,7 +46,8 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 
 # 标准业务知识储备
 
-
+# 安全
+[全面的告诉你项目的安全性控制需要考虑的方面](https://blog.csdn.net/CSDN___LYY/article/details/84961437）
 # 文档技巧
 ## markdown
 [MarkDown 技能](howtowrite/markdown.md)
