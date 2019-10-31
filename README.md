@@ -14,7 +14,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 
 内容|网址
 ---|:--:|
-入门|http://mywiki.wooledge.org/BashGuide
+入门|<br>http://mywiki.wooledge.org/BashGuide</br> <br>[工作中编写shell脚本实践](https://liyangyang.blog.csdn.net/article/details/100584638)</br>
 常见问题|http://mywiki.wooledge.org/BashFAQ
 标准|http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html
 解释shell执行|https://explainshell.com/
@@ -30,7 +30,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 |类别|地址|备注|
 |:--:|:--:|:--:|
 |代理|[proxy](proxy/proxy.md)|
-|git|[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)|
+|git|<br>[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)</br><br>[Git - 使用git不知道内部实现机制怎么行](https://liyangyang.blog.csdn.net/article/details/101035399)|
 # 架构
 
 # 标准业务知识储备
