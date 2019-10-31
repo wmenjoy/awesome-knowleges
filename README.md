@@ -30,10 +30,11 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 |类别|地址|备注|
 |:--:|:--:|:--:|
 |代理|[proxy](proxy/proxy.md)|
-
+|git|[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)|
 # 架构
 
 # 标准业务知识储备
+
 
 # 文档技巧
 ## markdown
