@@ -5,16 +5,18 @@
 ## Java
 ### 语言本身
 ### 相关工具
+内容|网址
+---|:--:|
+日志|[log4j2](https://blog.csdn.net/CSDN___LYY/article/details/84394244)
 
 名称|网址
 ---|:--:|
 maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/java/maven.md)
 
 ## Shell
-
 内容|网址
 ---|:--:|
-入门|<br>http://mywiki.wooledge.org/BashGuide</br> <br>[工作中编写shell脚本实践](https://liyangyang.blog.csdn.net/article/details/100584638)</br>
+入门|http://mywiki.wooledge.org/BashGuide<br>[工作中编写shell脚本实践](https://liyangyang.blog.csdn.net/article/details/100584638)</br>
 常见问题|http://mywiki.wooledge.org/BashFAQ
 标准|http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html
 解释shell执行|https://explainshell.com/
@@ -25,7 +27,16 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 内容|网址
 ---|--|
 资源|https://github.com/avelino/awesome-go
-
+# 操作系统
+## Linux
+内容|网址
+---|:--:|
+入门|[Linux大纲](https://blog.csdn.net/CSDN___LYY/article/details/80810403)|
+# 分布式
+## 容器
+## MQ
+内容|网址
+kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[存储结构](https://blog.csdn.net/CSDN___LYY/article/details/85696954)
 # 工具
 |类别|地址|备注|
 |:--:|:--:|:--:|
