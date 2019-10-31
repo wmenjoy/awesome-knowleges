@@ -42,6 +42,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[存储结构](https://blog.csdn.net/CSDN___LYY/article/details/85696954)
 ## 监控
 [监控系统信息汇总](http://dockone.io/article/9316)
+[Prometheus架构与实践分享](http://dockone.io/article/9269)
 # 工具
 |类别|地址|备注|
 |:--:|:--:|:--:|
