@@ -30,7 +30,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 |类别|地址|备注|
 |:--:|:--:|:--:|
 |代理|[proxy](proxy/proxy.md)|
-|git|<br>[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)</br><br>[Git - 使用git不知道内部实现机制怎么行](https://liyangyang.blog.csdn.net/article/details/101035399)|
+|git|[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)<br/>[Git - 使用git不知道内部实现机制怎么行](https://liyangyang.blog.csdn.net/article/details/101035399)<br/>[git 是什么](https://blog.csdn.net/CSDN___LYY/article/details/81300411)|
 # 架构
 
 # 标准业务知识储备
