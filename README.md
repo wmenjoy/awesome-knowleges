@@ -32,6 +32,8 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/jav
 内容|网址
 ---|:--:|
 入门|[Linux大纲](https://blog.csdn.net/CSDN___LYY/article/details/80810403)|
+## Mac
+[Mac软件使用](https://github.com/bingoohuang/blog/issues/88#issuecomment-550804240)
 # 分布式
 ## 容器
 ### 模型
