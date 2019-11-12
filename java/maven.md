@@ -56,7 +56,7 @@ Adapt the configuration element to suit your needs (for example with the manifes
 ```
 package the artifact in an uber-jar, including its dependencies and to shade - i.e. rename - the packages of some of the dependencies.
 ```
-使用例子, 比如代码中需要将grizzly的包修改，我在maven中添加如下代码， 其中includes节点，告诉代码需要调整哪些jar包，filter过滤掉哪些不处理的文件， relocation 进行替换操作
+使用例子, 比如代码中需要将grizzly的包修改，我在maven中添加如下代码， 其中includes节点，告诉代码需要调整哪些jar包，filter过滤掉哪些不处理的文件， relocation 进行替换操作， 完成以后，grizzly中的org.glassfish.grizzly 被添加了cn.my.前缀
 ``` xml
  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
