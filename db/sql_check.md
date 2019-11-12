@@ -1,10 +1,18 @@
 
 # 开源项目
-* [Yearning](https://github.com/cookieY/Yearning)
-* [See](https://github.com/myide/see)
+[Yearning](https://github.com/cookieY/Yearning)
+[See](https://github.com/myide/see)
 
-Inception: 去哪儿网开源，提供SQL语句审核、执行、回滚功能
 
-SQLAdvisor: 美团开源，提供分析SQL中的where条件、聚合条件、多表Join关系，输出索引优化建议
-
-SOAR: 小米开源，提供SQL启发式算法的语句优化、多列索引优化等功能
+# 其他
+- 可视化 [pyecharts](https://github.com/pyecharts/pyecharts)
+- MySQL审核/执行/备份 [goInception](https://github.com/hanchuanchuan/goInception)|[inception](https://github.com/hhyo/inception)
+- MySQL索引优化 [SQLAdvisor](https://github.com/Meituan-Dianping/SQLAdvisor)
+- SQL优化/压缩 [SOAR](https://github.com/XiaoMi/soar)
+- Binlog2SQL [binlog2sql](https://github.com/danfengcao/binlog2sql)
+- 表结构同步 [SchemaSync](https://github.com/hhyo/SchemaSync)
+- 慢日志解析展示 [pt-query-digest](https://www.percona.com/doc/percona-toolkit/3.0/pt-query-digest.html)|[aquila_v2](https://github.com/thinkdb/aquila_v2)
+- 大表DDL [gh-ost](https://github.com/github/gh-ost)|[pt-online-schema-change](https://www.percona.com/doc/percona-toolkit/3.0/pt-online-schema-change.html)
+- MyBatis XML解析 [mybatis-mapper2sql](https://github.com/hhyo/mybatis-mapper2sql)
+- RDS管理 [aliyun-openapi-python-sdk](https://github.com/aliyun/aliyun-openapi-python-sdk)
+- 数据加密 [django-mirage-field](https://github.com/luojilab/django-mirage-field)
