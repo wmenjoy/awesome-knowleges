@@ -51,6 +51,63 @@ f you want to create that assembly as part of the normal build process, you shou
 ```
 Adapt the configuration element to suit your needs (for example with the manifest stuff as spoken).
 
+### 2.1.1 如何将依赖包的路径修改后，打成一个包
+为了避免包冲突，有时候，我们需要对包进行改路径，重新编译，这时候maven-shade-plugin就可以帮你省好多事情,官方说明如下
+```
+package the artifact in an uber-jar, including its dependencies and to shade - i.e. rename - the packages of some of the dependencies.
+```
+使用例子, 比如代码中需要将grizzly的包修改，我在maven中添加如下代码， 其中includes节点，告诉代码需要调整哪些jar包，filter过滤掉哪些不处理的文件， relocation 进行替换操作
+``` xml
+ <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <artifactSet>
+                        <includes>
+                            <include>org.glassfish.grizzly:grizzly-framework</include> <!-- 需要修改的jar包-->
+                            <include>org.glassfish.grizzly:grizzly-portunif</include>
+                            <include>org.glassfish.grizzly:grizzly-http-server-jaxws</include>
+                            <include>org.glassfish.grizzly:grizzly-http-server</include>
+                          <!--  <include>ch.qos.logback:logback-classic</include>
+                            <include>ch.qos.logback:logback-core</include> -->
+                        </includes>
+                    </artifactSet>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+			 <!-- 需要修改的jar包-->
+                    <relocations>
+                        <relocation>
+                            <pattern>org.glassfish.grizzly</pattern>
+                            <shadedPattern>cn.my.org.glassfish.grizzly</shadedPattern>
+                        </relocation>
+                    <!--    <relocation>
+                            <pattern>ch.qos.logback</pattern>
+                            <shadedPattern>cn.my.ch.qos.logback.</shadedPattern>
+                        </relocation> -->
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+```
+
+### 2.1.2 参考
+[Apache Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/index.html)
 ## 2.2 Maven 如何做覆盖率测试(使用jacoco 插件）
 ``` bash
 mvn org.jacoco:jacoco-maven-plugin:prepare-agent clean package sonar:sonar -Dspring.profiles.active=test -Dmaven.test.failure.ignore=true
