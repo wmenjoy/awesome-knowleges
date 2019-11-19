@@ -11,3 +11,4 @@
 
 # 参考文档？
 [1、The Java Authentication and Authorization Service Munual](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html)
+[2、JAAS是什么梗](https://blog.csdn.net/program_developer/article/details/78795922)
