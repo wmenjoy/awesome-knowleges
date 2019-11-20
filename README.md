@@ -11,7 +11,7 @@
 
 名称|网址
 ---|:--:|
-maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/java/maven.md)
+maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/languages/java/maven.md)
 
 ## Shell
 内容|网址
