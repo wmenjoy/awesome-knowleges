@@ -5,7 +5,6 @@ mount -t proc proc /proc
 ```
 其他加载参数参考[Mount Options](./proc.md#MountOptions)
 
-Most of the files in the **proc** file
 # MountOptions
 The **proc** filesystem supports the following mount options:
 
