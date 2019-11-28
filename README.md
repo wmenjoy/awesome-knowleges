@@ -83,3 +83,7 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 
 [Uml相关](https://github.com/wmenjoy/awesome-knowleges/blob/master/howtowrite/planturml.md)
 [mac](https://blankj.com/gitbook/mac/)
+
+# 资源链接
+[1. Indiana Univeristy Knowledge Base](https://kb.iu.edu/d/menu)
+[2. RedHat Product manual](https://access.redhat.com/documentation/en-us/)
