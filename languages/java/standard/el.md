@@ -33,8 +33,8 @@ The precedence of operators highest to lowest, left to right is as follows:
 * ? :
 ## Reserved Words
 The following words are reserved for the El and should not be used as identifiers:
-|  |  |  |   
-|:-|:-|:-|:-|
+|         |          |         |              |
+| ------- |   -----  | ------- | ------ |
 |and|or|not|eq|
 |ne|lt|gt|le|
 |ge|true|false|null|
