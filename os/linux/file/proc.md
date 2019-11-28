@@ -10,19 +10,22 @@ Most of the files in the **proc** file
 The **proc** filesystem supports the following mount options:
 
 * **hidepid**=n (since Linux 3.3) 
+
     This Potion controls who can access the information in the */proc/[pid]* directories. The argument, n, is one of the following values
-    |||
-    |:-:|:-:|
-    |0|Everybody may access all */proc/[pid]* directories. This is the         traditional behavior, and the default if this mount option is not specified|
-    |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.|
-    |2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible|
+    
+    | Value | Desc                                                                      |    
+    | - | ---------------------------------------------------------------------
+    |0|Everybody may access all */proc/[pid]* directories. This is the traditional behavior, and the default if this mount option is not specified
+    |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.
+    |2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible
 
 * gid=**gid**(since Linux 3.3)
   
     Specifies the ID of a group whose members are authorized too learn process information otherwise prohibited by **hidepid**
 # Overview
   Underneath **proc**, there are the following general groups of files and  subdirectories
-   |||
+  
+   |directories|  desc     |
    |:-:|:-:|
    |**/proc/[pid]**|&ensp;Each one of these subdirectories contains files and subdirectories exposing information about the process with the corresponding process ID.</br>&ensp; Underneath each of the **/proc/[pid]** directories, a task subdirectory contains subdirectories of the form **task/[tid]**, which contain corresponding information about each of the threads in the process, where tid is the kernel thread ID of the thread. </br>&ensp; The **/proc/[pid]** subdirectories are visible when iterating through /proc with [getdents(2)](http://man7.org/linux/man-pages/man2/getdents.2.html) (and thus are visible when one= uses [ls(1)](http://man7.org/linux/man-pages/man1/ls.1.html) to view the contents of **/proc**)|
    |**/proc/[tid]** |&ensp; Each one of these subdirectories contains files and subdirectories exposing information about the thread with the corresponding thread ID.</br>&ensp; The contents of these directories are thesame as the corresponding **/proc/[pid]/task/[tid]** directories.</br>&ensp; The **/proc/[tid]** subdirectories are not visible when iterating through /proc with [getdents(2)](http://man7.org/linux/man-pages/man2/getdents.2.html) (and thus are not visible when one uses [ls(1)](http://man7.org/linux/man-pages/man1/ls.1.html) to view the contents of /proc).|
