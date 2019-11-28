@@ -42,7 +42,7 @@ The following words are reserved for the El and should not be used as identifier
  # Example
 the following table contains example EL expressions and the result of evaluating them.
 |EL Expression|Result|
-|:-|:-|
+| -           | -   |
 |```${1 > (4/2)}```|false
 |```${4.0 >= 3}```|true
 |```${100.0 == 100}```|true
