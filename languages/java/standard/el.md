@@ -33,7 +33,7 @@ The precedence of operators highest to lowest, left to right is as follows:
 * ? :
 ## Reserved Words
 The following words are reserved for the El and should not be used as identifiers:
-||||
+|  |  |  |   
 |:-|:-|:-|:-|
 |and|or|not|eq|
 |ne|lt|gt|le|
@@ -41,8 +41,8 @@ The following words are reserved for the El and should not be used as identifier
 |instance of | empty|div|mod|
  # Example
 the following table contains example EL expressions and the result of evaluating them.
-|EL Expression|Result|
-| -           | -   |
+| EL Expression | Result |
+| ----          | ----  |
 |```${1 > (4/2)}```|false
 |```${4.0 >= 3}```|true
 |```${100.0 == 100}```|true
