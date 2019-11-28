@@ -12,10 +12,10 @@ The **proc** filesystem supports the following mount options:
 * **hidepid**=n (since Linux 3.3) 
     This Potion controls who can access the information in the */proc/[pid]* directories. The argument, n, is one of the following values
     |||
-    |:-|:-|
-    |0|Everybody may access all */proc/[pid]* directories. This is the         traditional behavior, and the default if this mount option is not specified
-    |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.
-    |2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible
+    |:-:|:-:|
+    |0|Everybody may access all */proc/[pid]* directories. This is the         traditional behavior, and the default if this mount option is not specified|
+    |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.|
+    |2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible|
 
 * gid=**gid**(since Linux 3.3)
   
@@ -23,12 +23,12 @@ The **proc** filesystem supports the following mount options:
 # Overview
   Underneath **proc**, there are the following general groups of files and  subdirectories
    |||
-   |:-|:-|
-   |**/proc/[pid]**|&ensp;Each one of these subdirectories contains files and subdirectories exposing information about the process with the corresponding process ID.</br>&ensp; Underneath each of the **/proc/[pid]** directories, a task subdirectory contains subdirectories of the form **task/[tid]**, which contain corresponding information about each of the threads in the process, where tid is the kernel thread ID of the thread. </br>&ensp; The **/proc/[pid]** subdirectories are visible when iterating through /proc with [getdents(2)](http://man7.org/linux/man-pages/man2/getdents.2.html) (and thus are visible when one= uses [ls(1)](http://man7.org/linux/man-pages/man1/ls.1.html) to view the contents of **/proc**)
+   |:-:|:-:|
+   |**/proc/[pid]**|&ensp;Each one of these subdirectories contains files and subdirectories exposing information about the process with the corresponding process ID.</br>&ensp; Underneath each of the **/proc/[pid]** directories, a task subdirectory contains subdirectories of the form **task/[tid]**, which contain corresponding information about each of the threads in the process, where tid is the kernel thread ID of the thread. </br>&ensp; The **/proc/[pid]** subdirectories are visible when iterating through /proc with [getdents(2)](http://man7.org/linux/man-pages/man2/getdents.2.html) (and thus are visible when one= uses [ls(1)](http://man7.org/linux/man-pages/man1/ls.1.html) to view the contents of **/proc**)|
    |**/proc/[tid]** |&ensp; Each one of these subdirectories contains files and subdirectories exposing information about the thread with the corresponding thread ID.</br>&ensp; The contents of these directories are thesame as the corresponding **/proc/[pid]/task/[tid]** directories.</br>&ensp; The **/proc/[tid]** subdirectories are not visible when iterating through /proc with [getdents(2)](http://man7.org/linux/man-pages/man2/getdents.2.html) (and thus are not visible when one uses [ls(1)](http://man7.org/linux/man-pages/man1/ls.1.html) to view the contents of /proc).|
-   **/proc/self**|when a process accesses this magic symbolic link, it resolves to thee process's own **/proc/[pid]**
-   |**/proc/thread-self**|When a thread accesses this magic symbolic link, it resolves to the process's own **/proc/self/task/[tid]** directory.
-   |**/proc/[a-z]**|Various other files and subdirectories under /proc expose system-wide information.
+   **/proc/self**|when a process accesses this magic symbolic link, it resolves to thee process's own **/proc/[pid]**|
+   |**/proc/thread-self**|When a thread accesses this magic symbolic link, it resolves to the process's own **/proc/self/task/[tid]** directory.|
+   |**/proc/[a-z]**|Various other files and subdirectories under /proc expose system-wide information.|
 
 # Files and directories
 so much files in the proc directories, only Important one are list here, others can be find in [Linux Programmer's Manual: PROC(5)](http://man7.org/linux/man-pages/man5/proc.5.html)
