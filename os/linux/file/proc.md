@@ -13,9 +13,9 @@ The **proc** filesystem supports the following mount options:
     This Potion controls who can access the information in the */proc/[pid]* directories. The argument, n, is one of the following values
     |||
     |:-|:-|
-    0|Everybody may access all */proc/[pid]* directories. This is the         traditional behavior, and the default if this mount option is not specified
-    1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.
-    2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible
+    |0|Everybody may access all */proc/[pid]* directories. This is the         traditional behavior, and the default if this mount option is not specified
+    |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.
+    |2|As for mode 1, but in addition the */proc/[pid]* directories belonging to other users become invisible
 
 * gid=**gid**(since Linux 3.3)
   
