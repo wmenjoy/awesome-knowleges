@@ -1,18 +1,24 @@
-# Introduction
+# Proc 详解
+
+## Introduction
+
 The **proc** filesystem is a pseudo-system which provide an interface to kernel data structures. Typically, It's mounted automatically by the system, but it can also be mounted manually using a command such as:
-```
+
+``` shell
 mount -t proc proc /proc
 ```
+
 其他加载参数参考[Mount Options](./proc.md#MountOptions)
 
-# MountOptions
+## MountOptions
+
 The **proc** filesystem supports the following mount options:
 
 * **hidepid**=n (since Linux 3.3) 
 
     This Potion controls who can access the information in the */proc/[pid]* directories. The argument, n, is one of the following values
-    
-    | Value | Desc                                                                      |    
+  
+   | Value | Desc                            |
     | - | ---------------------------------------------------------------------
     |0|Everybody may access all */proc/[pid]* directories. This is the traditional behavior, and the default if this mount option is not specified
     |1|Users may not access files and subdirectors inside any */proc/[pid]   directories but their own.
@@ -21,7 +27,9 @@ The **proc** filesystem supports the following mount options:
 * gid=**gid**(since Linux 3.3)
   
     Specifies the ID of a group whose members are authorized too learn process information otherwise prohibited by **hidepid**
-# Overview
+
+## Overview
+
   Underneath **proc**, there are the following general groups of files and  subdirectories
   
    |directories|  desc     |
@@ -32,12 +40,33 @@ The **proc** filesystem supports the following mount options:
    |**/proc/thread-self**|When a thread accesses this magic symbolic link, it resolves to the process's own **/proc/self/task/[tid]** directory.|
    |**/proc/[a-z]**|Various other files and subdirectories under /proc expose system-wide information.|
 
-# Files and directories
+most frequently used subdirectories are list in the following table
+
+|subdirectories| introduction|
+| -------- | ------- |
+| **/proc/loadavg** | 前三列分别保存最近1分钟，5分钟，及15分钟的平均负载。|
+| **/proc/meminfo** | 当前内存使用信息|
+| **/proc/diskstats**|磁盘I/O统计信息列表|
+|**/proc/net/dev** |网络流入流出统计信息|
+|**/proc/filesystems** | 支持的文件系统
+|**/proc/cpuinfo** | CPU的详细信息
+|**/proc/cmdline** |启动时传递至内核的启动参数，通常由grub进行传递
+|**/proc/mounts** |  系统当前挂在的文件系统
+|**/proc/uptime** |系统运行时间
+|**/poc/version** |  当前运行的内核版本号等信息
+
+
+## Files and directories
+
 so much files in the proc directories, only Important one are list here, others can be find in [Linux Programmer's Manual: PROC(5)](http://man7.org/linux/man-pages/man5/proc.5.html)
-## /proc/$pid部分内容
-### auxv
+
+### /proc/$pid部分内容
+
+#### auxv
+
 **/proc/[pid]/auxv**包含传递给进程的ELF解释器信息，格式是每一项都是一个unsigned long长度的ID加上一个unsigned long长度的值。最后一项以连续的两个0x00开头， 参考[ELF AuxV辅助向量](http://blog.chinaunix.net/uid-28323465-id-4074353.html)
-```
+
+``` hex
 # hexdump -x /proc/2948/auxv
 0000000    0021    0000    0000    0000    0000    1a82    7ffd    0000
 0000010    0010    0000    0000    0000    dbf5    1fc9    0000    0000
@@ -60,9 +89,12 @@ so much files in the proc directories, only Important one are list here, others 
 0000120    0000    0000    0000    0000    0000    0000    0000    0000
 0000130
 ```
-### cmdline
+
+#### cmdline
+
 **/proc/[pid]/cmdline**是一个只读文件，包含进程的完整命令行信息。如果这个进程是zombie进程，则这个文件没有任何内容。
-```
+
+``` shell
 # ps -ef | grep 2948
 root       2948      1  0 Nov05 ?        00:00:04 /usr/
 
@@ -70,21 +102,30 @@ sbin/libvirtd --listen
 # cat /proc/2948/cmdline
 /usr/sbin/libvirtd--listen
 ```
-###  comm
+
+#### comm
+
 **/proc/[pid]/comm**包含进程的命令名 
-```
+
+```shell
 # cat /proc/2948/comm
 libvirtd
 ```
-### cwd
+
+#### cwd
+
 **/proc/[pid]/cwd**是进程当前工作目录的符号链接。
-```
+
+``` shell
 # ls -lt /proc/2948/cwd
 lrwxrwxrwx 1 root root 0 Nov  9 12:14 /proc/2948/cwd -> /
 ```
-### environment
+
+#### environment
+
 **/proc/[pid]/environ** 显示进程的环境变量。
-```
+
+``` shell
 # strings /proc/2948/environ
 LANG=POSIX
 LC_CTYPE=en_US.UTF-8
@@ -94,15 +135,21 @@ LIBVIRTD_CONFIG=/etc/libvirt/libvirtd.conf
 LIBVIRTD_ARGS=--listen
 LIBVIRTD_NOFILES_LIMIT=2048
 ```
-### exe
+
+#### exe
+
 **/proc/[pid]/exe**为实际运行程序的符号链接
-```
+
+```shell
 # ls -lt /proc/2948/exe
 lrwxrwxrwx 1 root root 0 Nov  5 13:04 /proc/2948/exe -> /usr/sbin/libvirtd
 ```
-### fd
+
+#### fd
+
 **/proc/[pid]/fd**是一个目录，包含进程打开文件的情况。
-```
+
+``` shell
 # ls -lt /proc/3801/fd
 total 0
 lrwx------. 1 root root 64 Apr 18 16:51 0 -> socket:[37445]
@@ -128,18 +175,25 @@ lrwx------. 1 root root 64 Apr 18 16:51 8 -> socket:[37450]
 lrwx------. 1 root root 64 Apr 18 16:51 9 -> socket:[37451]
 l-wx------. 1 root root 64 Apr 13 16:35 2 -> /root/.vnc/localhost.localdomain:1.log
 ```
+
 目录中的每一项都是一个符号链接，指向打开的文件，数字则代表文件描述符。
-### latency
+
+#### latency
+
 **/proc/[pid]/latency**显示哪些代码造成的延时比较大（使用这个feature，需要执行“echo 1 > /proc/sys/kernel/latencytop”）。
-```
+
+``` shell
 # cat /proc/2948/latency
 Latency Top version : v0.1
 30667 10650491 4891 poll_schedule_timeout do_sys_poll SyS_poll system_call_fastpath 0x7f636573dc1d
 8 105 44 futex_wait_queue_me futex_wait do_futex SyS_futex system_call_fastpath 0x7f6365a167bc
 ```
-### limits
+
+#### limits
+
 **/proc/[pid]/limits**显示当前进程的资源限制
-```
+
+``` shell
 # cat /proc/2948/limits
 Limit                     Soft Limit           Hard Limit           Units
 Max cpu time              unlimited            unlimited            seconds
@@ -159,10 +213,14 @@ Max nice priority         0                    0
 Max realtime priority     0                    0
 Max realtime timeout      unlimited            unlimited            us
 ```
+
 **Soft Limit**表示kernel设置给资源的值，**Hard Limit**表示**Soft Limit**的上限，而**Units**则为计量单元。
-### maps
+
+#### maps
+
 **/proc/[pid]/maps**显示进程的内存区域映射信息。
-```
+
+``` shell
 # cat /proc/2948/maps
 ......
 address                   perms offset  dev   inode                      pathname
@@ -178,16 +236,23 @@ address                   perms offset  dev   inode                      pathnam
 7ffd1a820000-7ffd1a821000 r-xp 00000000 00:00 0                          [vdso]
 ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
 ```
+
 其中注意的一点是[stack:<tid>]是线程的堆栈信息，对应于/proc/[pid]/task/[tid]/路径。
-### root
+
+#### root
+
 **/proc/[pid]/root**是进程根目录的符号链接
-```
+
+```shell
 # ls -lt /proc/2948/root
 lrwxrwxrwx 1 root root 0 Nov  9 12:14 /proc/2948/root -> /
 ```
-### stack
+
+#### stack
+
 **/proc/[pid]/stack**显示当前进程的内核调用栈信息，只有内核编译时打开了**CONFIG_STACKTRACE**编译选项，才会生成这个文件。
-```
+
+```shell
 # cat /proc/2948/stack
 [<ffffffff80168375>] poll_schedule_timeout+0x45/0x60
 [<ffffffff8016994d>] do_sys_poll+0x49d/0x550
@@ -196,13 +261,18 @@ lrwxrwxrwx 1 root root 0 Nov  9 12:14 /proc/2948/root -> /
 [<00007f4a41ff2c1d>] 0x7f4a41ff2c1d
 [<ffffffffffffffff>] 0xffffffffffffffff
 ```
-### statm
+
+#### statm
+
 **/proc/[pid]/statm**显示进程所占用内存大小的统计信息，包含七个值，度量单位是page（page大小可通过getconf PAGESIZE得到）。
-```
+
+``` shell
 # cat /proc/2948/statm  
 72362 12945 4876 569 0 24665 0
 ```
+
 各个值含义：
+
 1. 进程占用的总的内存；
 2. 进程当前时刻占用的物理内存；
 3. 同其它进程共享的内存； 
@@ -210,23 +280,34 @@ lrwxrwxrwx 1 root root 0 Nov  9 12:14 /proc/2948/root -> /
 5. 共享库（从2.6版本起，这个值为0）；
 6. 进程的堆栈；
 7. dirty pages（从2.6版本起，这个值为0）。
-### syscall
+   
+#### syscall
+
 **/proc/[pid]/syscall**显示当前进程正在执行的系统调用
-```
+
+``` shell
 
 # cat /proc/2948/syscall
 7 0x7f4a452cbe70 0xb 0x1388 0xffffffffffdff000 0x7f4a4274a750 0x0 0x7ffd1a8033f0 0x7f4a41ff2c1d
 ```
+
 第一个值是系统调用号（7代表poll），后面跟着6个系统调用的参数值（位于寄存器中），最后两个值依次是堆栈指针和指令计数器的值。如果当前进程虽然阻塞，但阻塞函数并不是系统调用，则系统调用号的值为-1，后面只有堆栈指针和指令计数器的值。如果进程没有阻塞，则这个文件只有一个“running”的字符串。
 
 内核编译时打开了CONFIG_HAVE_ARCH_TRACEHOOK编译选项，才会生成这个文件。
-### wchan
+
+#### wchan
+
 **/proc/[pid]/wchan**显示当进程sleep时，kernel当前运行的函数。
-```
+
+```shell
 # cat /proc/2948/wchan
 kauditd_
 ```
-# 参考
+
+### /proc/cpuinfo
+
+## 参考
+
 1. [Linux Programmer's Manual: PROC(5)](http://man7.org/linux/man-pages/man5/proc.5.html)
 2. [ELF AuxV辅助向量](http://blog.chinaunix.net/uid-28323465-id-4074353.html)
 3. [Linux /proc/$pid部分内容详解](https://blog.csdn.net/weixin_30681615/article/details/95072888)
