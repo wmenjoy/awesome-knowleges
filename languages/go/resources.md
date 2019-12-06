@@ -17,3 +17,6 @@
 
 ## 模板
 1. [render](https://github.com/unrolled/render)
+
+## other
+[go-study-index](https://github.com/Unknwon/go-study-index)
