@@ -28,7 +28,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 常见问题|[Bash FAQ](http://mywiki.wooledge.org/BashFAQ)
 标准|[POSIX Standard](http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html)</br>[Man7](http://man7.org/linux/man-pages/man1/bash.1.html)</br>[GNU Standard](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
 解释shell执行|https://explainshell.com/
-有用的shell|启动脚本:<br>1、[tomcat 启动脚本](https://github.com/apache/tomcat/blob/master/bin/catalina.sh)</br>[centos:常用方法]( https://github.com/seanhess/centos/blob/master/library.sh) </br>[Linux上，最常用的一批命令解析](https://juejin.im/post/5d134fbfe51d4510727c80d1?utm_source=gold_browser_extension)
+有用的shell|启动脚本:<br>1. [tomcat 启动脚本](https://github.com/apache/tomcat/blob/master/bin/catalina.sh)</br>2. [centos:常用方法](https://github.com/seanhess/centos/blob/master/library.sh) </br>3. [Linux上，最常用的一批命令解析](https://juejin.im/post/5d134fbfe51d4510727c80d1?utm_source=gold_browser_extension)
 老黄的github|https://github.com/bingoohuang/blog/issues/106
 在线版本|https://repl.it/
 书籍|[Advanced Bash-Scripting Guide](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
