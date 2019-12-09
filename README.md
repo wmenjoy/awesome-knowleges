@@ -26,11 +26,12 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 ---|:--:|
 入门|http://mywiki.wooledge.org/BashGuide<br>[工作中编写shell脚本实践](https://liyangyang.blog.csdn.net/article/details/100584638)</br>
 常见问题|http://mywiki.wooledge.org/BashFAQ
-标准|http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html
+标准|[POSIX Standard]http://pubs.opengroup.org/onlinepubs/9699919799/xrat/contents.html</br>[Man7](http://man7.org/linux/man-pages/man1/bash.1.html)</br>[GNU Standard](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
 解释shell执行|https://explainshell.com/
 有用的shell|启动脚本:<br>1、https://github.com/apache/tomcat/blob/master/bin/catalina.sh</br>centos: https://github.com/seanhess/centos/blob/master/library.sh </br>https://juejin.im/post/5d134fbfe51d4510727c80d1?utm_source=gold_browser_extension
 老黄的github|https://github.com/bingoohuang/blog/issues/106
 在线版本|https://repl.it/
+书籍|[Advanced Bash-Scripting Guide](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
 
 ### Go
 
@@ -39,14 +40,21 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 资源|https://github.com/avelino/awesome-go
 ## 操作系统
 ### Linux
+
 内容|网址
 ---|:--:|
 入门|[Linux大纲](https://blog.csdn.net/CSDN___LYY/article/details/80810403)|
+
 ### Mac
+
 [Mac软件使用](https://github.com/bingoohuang/blog/issues/88#issuecomment-550804240)
+
 ## 2分布式
+
 ### 容器
+
 #### 模型
+
 [容器设计模式](http://dockone.io/article/9290)
 
 [为什么容器是单进程模型](http://dockone.io/article/9274)
