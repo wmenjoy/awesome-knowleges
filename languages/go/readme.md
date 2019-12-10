@@ -1,7 +1,7 @@
 
 # 基本语法
 1、关键字
-2、分支预测
+2、[分支预测](branch_statement.md)
 3、函数
 4、接口
 5、go routing
