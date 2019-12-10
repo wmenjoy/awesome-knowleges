@@ -1,12 +1,12 @@
 
 # 基本语法
-1、关键字
-2、[分支预测](branch_statement.md)
-3、函数
-4、接口
-5、go routing
-6、go sdk
-7、原理
+1. 关键字
+2. [分支预测](branch_statement.md)
+3. 函数
+4. 接口
+5. go routing
+6. go sdk
+7. 原理
 # 编程规范
 [Uber go 语言编程规范](http://dockone.io/article/9331)
 #go 工具包
