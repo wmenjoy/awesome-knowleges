@@ -7,4 +7,5 @@
 
 
 ## 开发相关
-1. [权限管理系统](https://github.com/wuyouzhuguli/FEBS-Shiro)
+1. [权限管理系统 FEBS-Shiro](https://github.com/wuyouzhuguli/FEBS-Shiro)
+2. [权限管理 FEBS-Cloud](https://github.com/wuyouzhuguli/FEBS-Cloud)
