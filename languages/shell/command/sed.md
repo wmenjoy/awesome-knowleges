@@ -44,26 +44,36 @@ SYNOPSIS
 [All]: Command in mac are called Script in linux.  
 
 -n
-
-              [Linux]:suppress automatic printing of pattern space
-              [Mac]:By default, each line of input is echoed to the standard output after all of the commands have
-                been applied to it.  The -n option suppresses this behavior.
-              [Example]: sed -n '1p' 1.out
-              [All]: -n 和p function 结合在一起可以实现只打印替换后的行数
+              [Linux]:
+                     suppress automatic printing of pattern space
+              [Mac]:
+                     By default, each line of input is echoed to the standard output after all of the commands have
+                     been applied to it.  The -n option suppresses this behavior.
+              [Example]: 
+                     sed -n '1p' 1.out
+              [All]: 
+                     -n 和p function 结合在一起可以实现只打印替换后的行数
 -e command    
-              [Linux]:  add the script to the commands to be executed
-              [Mac]:    :Append the editing commands specified by the command argument to the list of commands. 
-              [Example]: sed  -e'1p' -e '2p' intellij-soapui-workspace.xml
+              [Linux]:  
+                     add the script to the commands to be executed
+              [Mac]:    
+                     Append the editing commands specified by the command argument to the list of commands. 
+              [Example]: 
+                     sed  -e'1p' -e '2p' intellij-soapui-workspace.xml
 -f command-file
-              [Linux]: add the contents of script-file to the commands to be executed
-              [Mac]: Append the editing commands found in the file command_file to the list of commands.  The edit-
+              [Linux]: 
+                     add the contents of script-file to the commands to be executed
+              [Mac]: 
+                     Append the editing commands found in the file command_file to the list of commands.  The edit-
                     ing commands should each be listed on a separate line.
 -i extension   also -i[suffix] in linux
-              [Mac]:  Edit files in-place, saving backups with the specified extension.  If a zero-length extension
-             is given, no backup will be saved.  It is not recommended to give a zero-length extension when
-             in-place editing files, as you risk corruption or partial content in situations where disk
-             space is exhausted, etc.
-              [Linux]: edit files in place (makes backup if SUFFIX supplied)
+              [Mac]:  
+                     Edit files in-place, saving backups with the specified extension.  If a zero-length extension
+                     is given, no backup will be saved.  It is not recommended to give a zero-length extension when
+                     in-place editing files, as you risk corruption or partial content in situations where disk
+                     space is exhausted, etc.
+              [Linux]: 
+                     edit files in place (makes backup if SUFFIX supplied)
 ```
 
 Extended Regular Expression 
