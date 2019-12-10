@@ -5,8 +5,8 @@
 3. [分支预测](branch_statement.md)
 4. [函数](method.md)
 5. 接口
-5. go routing
-6. go sdk
+6. go routing
+7. 反射
 7. 原理
 # 编程规范
 [Uber go 语言编程规范](http://dockone.io/article/9331)
