@@ -64,8 +64,11 @@ SYNOPSIS
              in-place editing files, as you risk corruption or partial content in situations where disk
              space is exhausted, etc.
               [Linux]: edit files in place (makes backup if SUFFIX supplied)
+```
 
 Extended Regular Expression 
+
+```
 [All]: Extended Regular Expression is supported by Linux And Mac in diferent way. 
 [Mac]:  -E     Interpret regular expressions as extended (modern) regular expressions rather than basic regu-
              lar expressions (BRE's).  The re_format(7) manual page fully describes both formats.
