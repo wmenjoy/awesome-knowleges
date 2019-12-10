@@ -1,5 +1,6 @@
-# 命令简介
-## linux 的描述
+# echo
+## 命令简介
+### linux 的描述
 ```
 NAME
        echo - display a line of text
@@ -13,7 +14,7 @@ DESCRIPTION
        
 echo support -n -e -E options
 ```
-## mac 的描述
+### mac 的描述
 ```
 NAME
      echo -- write arguments to the standard output
@@ -28,13 +29,14 @@ DESCRIPTION
      
      echo command default enables the interpretation of backslash escapes. 
 ```
-## 兼容性
+### 兼容性
 1、 Mac系统的echo 是内置命令， linux 位于/bin/echo
 
 2、两者支持共同的-n命令
 
-# 用途
-## 1、输出文本到文件
+## 用途
+### 1、输出文本到文件
 
-## 2、用作函数的结果
+### 2、用作函数的结果
 
+## 参考
