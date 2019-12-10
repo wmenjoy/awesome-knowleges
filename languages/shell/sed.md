@@ -46,14 +46,15 @@ SYNOPSIS
               [Linux]: add the contents of script-file to the commands to be executed
               [Mac]: Append the editing commands found in the file command_file to the list of commands.  The edit-
                     ing commands should each be listed on a separate line.
--i extension  
+-i extension   also -i[suffix] in linux
               [Mac]:  Edit files in-place, saving backups with the specified extension.  If a zero-length extension
              is given, no backup will be saved.  It is not recommended to give a zero-length extension when
              in-place editing files, as you risk corruption or partial content in situations where disk
              space is exhausted, etc.
--i[suffix]    [Linux]: edit files in place (makes backup if SUFFIX supplied)
+              [Linux]: edit files in place (makes backup if SUFFIX supplied)
 
-Extended Regular Expression
+Extended Regular Expression 
+[All]: Extended Regular Expression is supported by Linux And Mac in diferent way. 
 [Mac]:  -E     Interpret regular expressions as extended (modern) regular expressions rather than basic regu-
              lar expressions (BRE's).  The re_format(7) manual page fully describes both formats.
 [Linux]: -r   use extended regular expressions in the script.
