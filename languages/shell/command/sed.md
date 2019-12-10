@@ -1,6 +1,8 @@
 # sed 学习
-## What's Sed Commond
+## What's Sed
+
 ### Linux
+
 ```
 NAME
        sed - stream editor for filtering and transforming text
@@ -25,8 +27,18 @@ SYNOPSIS
      sed [-Ealn] command [file ...]
      sed [-Ealn] [-e command] [-f command_file] [-i extension] [file ...]
 ```
+## sed 能做什么？
+  1. 能够替换，交换，插入，删除，追加。
+  2. 能进行正则匹配
+  3. 能进行循环，条件循环。
+  4. 提供Hold Space，类似于变换缓存的概念。
+  5. 可以与外界的文件进行交互。
+等等
 
-### 兼容性参数
+## sed 概念
+
+## sed 详解
+### sed 兼容性参数
 
 ```
 [All]: Command in mac are called Script in linux.  
@@ -61,15 +73,6 @@ Extended Regular Expression
               
 ```
 
-
-1、
-## sed 能做什么？
-  1. 能够替换，交换，插入，删除，追加。
-  2. 能进行正则匹配
-  3. 能进行循环，条件循环。
-  4. 提供Hold Space，类似于变换缓存的概念。
-  5. 可以与外界的文件进行交互。
-等等
 
 ## 实例
 
