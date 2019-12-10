@@ -2,10 +2,66 @@
 ## What's Sed Commond
 ### Linux
 ```
+NAME
+       sed - stream editor for filtering and transforming text
 
+SYNOPSIS
+       sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+DESCRIPTION
+       Sed  is a stream editor.  A stream editor is used to perform basic text transformations on an input stream (a
+       file or input from a pipeline).  While in some ways similar to an editor which permits scripted  edits  (such
+       as  ed),  sed works by making only one pass over the input(s), and is consequently more efficient.  But it is
+       sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
+```
+
+### Mac
 
 ```
-### Mac
+NAME
+     sed -- stream editor
+
+SYNOPSIS
+     sed [-Ealn] command [file ...]
+     sed [-Ealn] [-e command] [-f command_file] [-i extension] [file ...]
+```
+
+### 兼容性参数
+
+```
+[All]: Command in mac are called Script in linux.  
+
+-n
+
+              [Linux]:suppress automatic printing of pattern space
+              [Mac]:By default, each line of input is echoed to the standard output after all of the commands have
+                been applied to it.  The -n option suppresses this behavior.
+              [Example]: sed -n '1p' 1.out
+              [All]: -n 和p function 结合在一起可以实现只打印替换后的行数
+-e command    
+              [Linux]:  add the script to the commands to be executed
+              [Mac]:    :Append the editing commands specified by the command argument to the list of commands. 
+              [Example]: sed  -e'1p' -e '2p' intellij-soapui-workspace.xml
+-f command-file
+              [Linux]: add the contents of script-file to the commands to be executed
+              [Mac]: Append the editing commands found in the file command_file to the list of commands.  The edit-
+                    ing commands should each be listed on a separate line.
+-i extension  
+              [Mac]:  Edit files in-place, saving backups with the specified extension.  If a zero-length extension
+             is given, no backup will be saved.  It is not recommended to give a zero-length extension when
+             in-place editing files, as you risk corruption or partial content in situations where disk
+             space is exhausted, etc.
+-i[suffix]    [Linux]: edit files in place (makes backup if SUFFIX supplied)
+
+Extended Regular Expression
+[Mac]:  -E     Interpret regular expressions as extended (modern) regular expressions rather than basic regu-
+             lar expressions (BRE's).  The re_format(7) manual page fully describes both formats.
+[Linux]: -r   use extended regular expressions in the script.
+              
+```
+
+
+1、
 ## sed 能做什么？
   1. 能够替换，交换，插入，删除，追加。
   2. 能进行正则匹配
