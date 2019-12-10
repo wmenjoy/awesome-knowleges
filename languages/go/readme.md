@@ -3,7 +3,7 @@
 1. 关键字
 2. [变量](variables.md)
 3. [分支预测](branch_statement.md)
-4. [函数](method.md)
+4. [函数](methods.md)
 5. 接口
 6. go routing
 7. 反射
