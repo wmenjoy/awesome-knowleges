@@ -122,5 +122,8 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 
 1. [Indiana Univeristy Knowledge Base](https://kb.iu.edu/d/menu)
 2. [RedHat Product manual](https://access.redhat.com/documentation/en-us/)
-3. [TeachYourselfCS-CN
-](https://github.com/keithnull/TeachYourselfCS-CN)
+3. [TeachYourselfCS-CN](https://github.com/keithnull/TeachYourselfCS-CN)
+4. [微信技术架构， 腾讯技术架构](https://github.com/davideuler/architecture.wechat-tencent)
+5. [淘宝，alibaba](https://github.com/davideuler/architecture.taobao-alibaba)
+6. [美团](https://github.com/davideuler/architecture.meituan-dianping)
+7. [互联网产品](https://github.com/davideuler/architecture.of.internet-product)
