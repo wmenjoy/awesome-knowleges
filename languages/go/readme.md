@@ -1,9 +1,10 @@
 
 # 基本语法
 1. 关键字
-2. [分支预测](branch_statement.md)
-3. 函数
-4. 接口
+2. [变量](variables.md)
+3. [分支预测](branch_statement.md)
+4. [函数](method.md)
+5. 接口
 5. go routing
 6. go sdk
 7. 原理
