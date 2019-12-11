@@ -1,5 +1,5 @@
 # 密码
-Let's talk some aspects about cryptography
+Let's talk some aspects about Cryptography
 
 ## Introduction
 
