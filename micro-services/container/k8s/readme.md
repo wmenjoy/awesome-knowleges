@@ -13,7 +13,7 @@
 
 ## service mesh
 
-[lstio] (https://github.com/banzaicloud/istio-operator)
+[lstio](https://github.com/banzaicloud/istio-operator)
 
 
 ## 扩展
