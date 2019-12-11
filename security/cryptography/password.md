@@ -1,4 +1,4 @@
-
+# Password
 ## Why the security of passwords is so important?
 
 * 越来越多使用密码的场景出现，比如工作，购物，游戏，但是这些服务采取的安全认证方式都是密码登录
