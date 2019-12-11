@@ -8,7 +8,7 @@
 ## How to test how secure is your passwords?
 Try to test how seucre is your password using the web page [howsecureismypassword](https://howsecureismypassword.net/)
 
-## by what way Our passwords is lost?
+## By what way Our passwords is lost?
 * Keystroke logging
 * Phishing
 * A brute force attack
