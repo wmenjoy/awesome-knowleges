@@ -6,6 +6,9 @@
 
 ### 原则
   1、选择安全的密码，参考[Password Security](/security/cryptography/password.md)
+  2、密码存储在合适的地方，不要明文存储，甚至加密存储也要借助于权限控制
+  3、安全的使用密码，不要泄露密码到文件，系统中
+  4、定期更新密码
 
 
 
