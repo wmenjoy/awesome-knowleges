@@ -33,7 +33,11 @@ Numeric sequences based on well known numbers such as 911 (9-1-1, 9/11), 314159.
  - Anything personally related to an individual: license plate number, Social Security number, current or past telephone numbers, student ID, current address, previous addresses, birthday, sports team, relative's or pet's names/nicknames/birthdays/initials, etc., can easily be tested automatically after a simple investigation of a person's details.
 **Dates**: dates follow a pattern and make your password weak.
 
-## The techniques of break
+## The techniques of burce force password break?
+* Dictionary Attack
+* Brute-Force Attack
+* Database Hacking
+ 
 
 ## Password Security Tips?
 * Use At Least 8 Characters
