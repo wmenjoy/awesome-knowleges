@@ -41,7 +41,8 @@ Numeric sequences based on well known numbers such as 911 (9-1-1, 9/11), 314159.
 * Don't make your password personal
 * Stay away from patterns and predictable formulas
 * Store accounts in a password manager
-* Create unique passwords for all accounts
+* Don't Create unique passwords for all accounts
+* Change your password periodly
 
 ## Reference
 [password security guid](https://swoopnow.com/password-security-guide/)
