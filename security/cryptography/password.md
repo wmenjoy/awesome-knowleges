@@ -49,6 +49,6 @@ Numeric sequences based on well known numbers such as 911 (9-1-1, 9/11), 314159.
 * Change your password periodly
 
 ## Reference
-[password security guid](https://swoopnow.com/password-security-guide/)
-[WIKI:Password_strength](https://en.wikipedia.org/wiki/Password_strength)
-[CWE-521: Weak Password Requirements](https://cwe.mitre.org/data/definitions/521.html)
+- [password security guid](https://swoopnow.com/password-security-guide/)
+- [WIKI:Password_strength](https://en.wikipedia.org/wiki/Password_strength)
+- [CWE-521: Weak Password Requirements](https://cwe.mitre.org/data/definitions/521.html)
