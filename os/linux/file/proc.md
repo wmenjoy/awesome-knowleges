@@ -68,6 +68,7 @@ so much files in the proc directories, only Important one are list here, others 
 
 ``` hex
 # hexdump -x /proc/2948/auxv
+
 0000000    0021    0000    0000    0000    0000    1a82    7ffd    0000
 0000010    0010    0000    0000    0000    dbf5    1fc9    0000    0000
 0000020    0006    0000    0000    0000    1000    0000    0000    0000

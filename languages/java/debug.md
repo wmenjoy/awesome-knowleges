@@ -37,3 +37,5 @@ JDWP 是 Java Debug Wire Protocol 的缩写，它定义了调试器（debugger�
 2. [Alibaba](https://github.com/alibaba/arthas)
 3. [Java 自带工具]()
 
+## 参考
+[图文并茂教你学会使用 IntelliJ IDEA 进行远程调试](https://juejin.im/post/5de68796518825124c50bb75?utm_source=gold_browser_extension)
