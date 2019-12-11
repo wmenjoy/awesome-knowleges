@@ -16,6 +16,10 @@
 ## 配置
 
 https://juejin.im/post/5d350e70f265da1b897b0cbe?utm_source=gold_browser_extension
+
+
+## 其他
+[gochart](https://github.com/zieckey/gochart)
 # go 语言场景
 # 相关工具
 [go 包管理](utils/go_package_management.md)
