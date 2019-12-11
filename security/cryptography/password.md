@@ -2,7 +2,7 @@
 ## Why the security of passwords is so important?
 
 * 越来越多使用密码的场景出现，比如工作，购物，游戏，但是这些服务采取的安全认证方式都是密码登录
-* 密码丢失的风险越来越多
+* Passwords and passcodes are the most common way of authenticating users.
 
 
 ## How to test how secure is your passwords?
@@ -40,15 +40,19 @@ Numeric sequences based on well known numbers such as 911 (9-1-1, 9/11), 314159.
  
 
 ## Password Security Tips?
-* Use At Least 8 Characters
-* Avoid Names and Dictionary Words
-* Don't make your password personal
-* Stay away from patterns and predictable formulas
-* Store accounts in a password manager
-* Don't Create unique passwords for all accounts
-* Change your password periodly
+- Don’t use simple, easy to guess passwords such as names of friends, family and pets. Don’t use words from the dictionary or commonly used passwords such as 12345 or QWERTY.
+- Don’t share passwords with other people. If they need access to data they should be given their own login.
+- Don’t leave passwords lying around in notebooks, or on sticky notes close to your computer, or in files on your computer where they can easily be read.
+- Before you enter a password into a website, make sure it is using a secure connection beginning with https:// (it might also show a small padlock close to the address) this means the site is using a secure link that cannot be intercepted by attackers.
+- When you register with some online services they will send you a password so that you can log in. Many sites force you to change the password when you first log in, if they don’t, change it when you first visit the site.
+- If possible, change the default password on devices such as your internet router. This is programmed at the factory and some companies have a single password for all their devices. An attacker only needs to know the make of your router to gain access.
+- If you have trouble remembering passwords try a password manager program that not only stores passwords, but can generate new, highly complex passwords for you.
+- Two-factor authentication gives you additional protection as it requires two pieces of information (such as a password and a random number sent by SMS) to provide access to your data. If a company offers two-factor authentication, you should use it.
 
 ## Reference
 - [password security guid](https://swoopnow.com/password-security-guide/)
 - [WIKI:Password_strength](https://en.wikipedia.org/wiki/Password_strength)
 - [CWE-521: Weak Password Requirements](https://cwe.mitre.org/data/definitions/521.html)
+- [Weak Password](https://www.sciencedirect.com/topics/computer-science/weak-password)
+- [7 Characteristics of Weak Passwords (Infographic)](https://www.govtech.com/security/7-Characteristics-of-Weak-Passwords-Infographic.html)
+- [How to pick a proper password](https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=48319&section=2.1)
