@@ -4,6 +4,11 @@
 
 [kafka-operator](https://github.com/banzaicloud/kafka-operator)
 
+## 整合方案
+
+[rainbond](https://github.com/goodrain/rainbond)
+
+## Package Manager
 [helm3](https://github.com/helm/helm)
 
 ## service mesh
