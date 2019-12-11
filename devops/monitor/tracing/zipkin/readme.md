@@ -12,7 +12,7 @@
 * 系统间的依赖
     ![依赖图](images/dependency-graph.png)
 
-## Zipkin 的架构是什么样子的
+### Zipkin 的架构是什么样子的
 
    ![Zipkin架构图](images/zipkin-architure.png)
 
