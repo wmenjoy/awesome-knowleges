@@ -18,7 +18,7 @@
     使用：
     * mysql_config_editor set --login-path=mysql_login --host=127.0.0.1 --port=33061 --user=root --password,
     * mysql --login-path=mysql_login
-    * 参考 [免密登录](https://opensourcedbms.com/dbms/passwordless-authentication-using-mysql_config_editor-with-mysql-5-6/)
+    * 参考 [Mysql免密登录](https://opensourcedbms.com/dbms/passwordless-authentication-using-mysql_config_editor-with-mysql-5-6/)
   - 秘钥不要存放在代码中。 服务器的配置中等，如果有人能够访问这些代码就有可能获取密码
     借助于专业的秘钥管理工具来存储，并且一定要结合合理的安全控制，来保证密码的安全
 
