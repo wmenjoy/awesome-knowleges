@@ -4,6 +4,9 @@
 
 [kafka-operator](https://github.com/banzaicloud/kafka-operator)
 
+## 安装
+[sealos](https://github.com/fanux/sealos?utm_source=gold_browser_extension)
+
 ## 整合方案
 
 [rainbond](https://github.com/goodrain/rainbond)

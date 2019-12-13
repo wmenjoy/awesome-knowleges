@@ -88,4 +88,6 @@ Tracing 数据采集， 需要嵌入到引用程序
   
 * [链路追踪工具Zipkin整合](https://www.jianshu.com/p/f177a5e2917f)
 
+* [zipkin-js](https://github.com/openzipkin/zipkin-js)
+
 [ZipkinGitHubUrl]:https://github.com/openzipkin/zipkin
