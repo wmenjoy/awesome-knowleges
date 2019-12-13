@@ -1,6 +1,7 @@
 # Tracing 
 
 ## What's Tracing
+	A trace is used to track the time spent by an application processing a request and the status of this request. Each trace consists of one or more spans.
 
 ## Design Goals of a Tracing System
 
