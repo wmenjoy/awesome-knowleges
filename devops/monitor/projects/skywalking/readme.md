@@ -125,7 +125,7 @@ OAP(Observability Analysis Platform) accepts data from different sources.
 
 - **Tracing** Including, SkyWalking native data formats. Zipkin v1,v2 data formats and Jaeger data formats.
 
-- **Tracing** yWalking integrates with Service Mesh platforms, such as Istio, Envoy, Linkerd, to provide observability from data panel or control panel. Also, SkyWalking native agents can run in metrics mode, which highly improve the performance.
+- **Tracing** skyWalking integrates with Service Mesh platforms, such as Istio, Envoy, Linkerd, to provide observability from data panel or control panel. Also, SkyWalking native agents can run in metrics mode, which highly improve the performance.
 
 By using any integration solution provided, such as SkyWalking log plugin or toolkits, SkyWalking provides visualization integration for binding tracing and logging together by using the trace id and span id.
 
