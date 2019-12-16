@@ -1,7 +1,8 @@
 
 ## script 
 
-```
+``` shell
+
 #!/bin/bash
 #主机信息每日巡检
 #version 2016.08.09
