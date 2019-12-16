@@ -55,7 +55,7 @@
 ## 学习资源
 
 [K8s学习资源](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-
+[K8s中Service的理解](k8s中service的理解)
 
 # CNI
 1. [Aliyun Terway](https://github.com/AliyunContainerService/terway)
