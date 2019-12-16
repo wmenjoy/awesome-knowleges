@@ -285,3 +285,9 @@ copy：复制本地文件到远程主机
 template：复制本地文件到远程主机但是他可以在本地文件中调用变量
 service ：定义服务的状态
 ```
+
+
+## 参考
+
+[ansible 架构](https://www.jianshu.com/p/6adb70ada5eb)
+[ansible](https://www.jianshu.com/p/3d0d4555f531)
