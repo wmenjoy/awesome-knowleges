@@ -7,6 +7,10 @@
 ## 安装
 [sealos](https://github.com/fanux/sealos?utm_source=gold_browser_extension)
 
+## 无服务
+
+[Openwhisk](https://github.com/apache/openwhisk)
+
 ## 整合方案
 
 [rainbond](https://github.com/goodrain/rainbond)
