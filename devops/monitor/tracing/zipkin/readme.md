@@ -90,4 +90,8 @@ Tracing 数据采集， 需要嵌入到引用程序
 
 * [zipkin-js](https://github.com/openzipkin/zipkin-js)
 
+* [Skywalking 学习笔记](https://juejin.im/post/5ab5b0e26fb9a028e25d7fcb)
+
+* [zipkin](https://blog.csdn.net/qq_27384769/article/details/84965170)
+
 [ZipkinGitHubUrl]:https://github.com/openzipkin/zipkin

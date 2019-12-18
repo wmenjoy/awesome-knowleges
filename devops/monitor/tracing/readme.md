@@ -1,7 +1,47 @@
 # Tracing 
 
 ## What's Tracing
-	A trace is used to track the time spent by an application processing a request and the status of this request. Each trace consists of one or more spans.
+
+A trace is used to track the time spent by an application processing a request and the status of this request. Each trace consists of one or more spans.
+
+### Trace And Span
+
+**Traces** in OpenTracing are defined implicitly by their **Spans**. In particular, a **Traces**  can be thought of as a directed acyclic graph (DAG) of **Spans**, where the edges between **Spans** are called **References**.
+
+For example, the following is an example Trace made up of 8 Spans:
+
+
+```
+Causal relationships between Spans in a single Trace
+
+
+        [Span A]  ←←←(the root span)
+            |
+     +------+------+
+     |             |
+ [Span B]      [Span C] ←←←(Span C is a `ChildOf` Span A)
+     |             |
+ [Span D]      +---+-------+
+               |           |
+           [Span E]    [Span F] >>> [Span G] >>> [Span H]
+                                       ↑
+                                       ↑
+                                       ↑
+                         (Span G `FollowsFrom` Span F)
+
+```
+Sometimes it's easier to visualize Traces with a time axis as in the diagram below:
+
+```
+––|–––––––|–––––––|–––––––|–––––––|–––––––|–––––––|–––––––|–> time
+
+ [Span A···················································]
+   [Span B··············································]
+      [Span D··········································]
+    [Span C········································]
+         [Span E·······]        [Span F··] [Span G··] [Span H··]
+```
+
 
 ## Design Goals of a Tracing System
 
@@ -13,11 +53,11 @@
 
 ## Trace Standard
 
-OpenTelemetry
+1. [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/overview.md)
 
-OpenTracing
+2. [OpenTracing]()
 
-OpenCensus
+3. [OpenCensus](https://opencensus.io/tracing/span/link/)
 
 
 ## How to choose Suitable Trace Systems
