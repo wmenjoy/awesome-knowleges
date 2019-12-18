@@ -11,7 +11,7 @@ Spring Cloud原生是使用的Spring Eureka来实现服务注册， Zuul来实�
 ## 熔断和限流
 ### Hystrixl
 
-![Hystrixl流程图](images/Hystricxl Processor.png)
+![Hystrixl流程图](images/Hystricxl%20Processor.png)
 
 
 
