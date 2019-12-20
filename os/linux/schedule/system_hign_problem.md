@@ -33,6 +33,52 @@
 ## 分析
 
 ### 系统分析
+由于loadavg 过高时间很短，所以为了能够及时观测到数值，写了个脚本，定时跑任务
+
+```bash#!/usr/bin/env  bash
+
+load1=$( cat /proc/loadavg|awk  '{print $1}')
+logfile=/root/load.log
+
+
+echo $(date) "load1="$load1 >> $logfile 
+
+
+if [[ $(echo "$load1 >= 1"|bc) = 1 ]]; then
+ echo "=========$(date) Top=============" >> $logfile
+ top -b  -n 1 >>$logfile
+ echo "=========$(date) cpu > 0=============" >> $logfile
+ ps aux|head -1;ps aux|grep -v PID|awk  '{if ($3 > 0.0){print $0}}' >>$logfile
+ PIDS=$(ps aux|grep -v PID|awk  '{if ($3 > 0.0){print $2}}')
+ for PID in $PIDS 
+ do
+  echo "=========$(date) top $PID thread info =========" >> $logfile
+  top -H -b -p $PID -n1 >>$logfile
+  echo "=========$(date) ps $PID thread info =======" >> $logfile
+   ps -Lp $PID cu >> $logfile
+  echo "=========$(date) pidstat -p $PID -rutl =======" >> $logfile
+   pidstat -p $PID -rutl  >> $logfile
+ done
+ echo "=========$(date) pidstat total =========" >> $logfile
+  pidstat -trds >> $logfile
+ echo "=========$(date) vmstat =========" >> $logfile
+ vmstat 2 5 >> $logfile
+ vmstat -s >> $logfile
+ echo "=========$(date) iostat =========" >> $logfile
+ iostat >> $logfile
+ iostat -dx >>$logfile
+ echo "=========$(date) netstat =========" >> $logfile
+ netstat -ntlp >> $logfile
+ echo "=======================sar =========" >> $logfile
+  echo "=================sar process info =========" >> $logfile
+  sar -P ALL 1 4 >> $logfile
+  echo "=================sar network =============" >> $logfile
+  sar -n ALL 1 1 >> $logfile
+  echo "=================sar ALL =============" >> $logfile
+  sar -A 1 1 >> $logfile
+fi
+
+```
 
 ### 分析linux内核机制
 
