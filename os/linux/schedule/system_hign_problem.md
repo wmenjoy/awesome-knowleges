@@ -34,7 +34,7 @@
 
 ### 系统分析
 
-### 参考文献
+### 分析linux内核机制
 
 ### 解决办法
 
@@ -68,3 +68,11 @@ telegraf 具体的配置在/etc/telegraf/telegraf.conf。关于agent的配置如
 ## 参考
 
 [时间序列模型-移动平均数](https://blog.csdn.net/qq_29831163/article/details/89440215)
+[serverfault: High load average but low CPU usage and disk I/O](https://serverfault.com/questions/949879/high-load-average-but-low-cpu-usage-and-disk-i-o)
+[kernel org:cpuload](https://www.kernel.org/doc/html/latest/admin-guide/cpu-load.html)
+[Investigation of regular high load on unused machines every 7 hours](https://blog.avast.com/investigation-of-regular-high-load-on-unused-machines-every-7-hours)
+[Understanding why the Linux loadavg rises every 7 hours ](https://mackerel.io/blog/entry/tech/high-loadavg-every-7-hours)
+[telegraf:high load average every 1h 45m ](https://github.com/influxdata/telegraf/issues/3465)
+[UNIX Load Average Part 2: Not Your Average Average](https://www.helpsystems.com/resources/guides/unix-load-average-part-2-not-your-average-average)
+[Understand Linux Load Averages and Monitor Performance of Linux](https://github.com/wmenjoy/awesome-knowleges/edit/master/os/linux/schedule/system_hign_problem.md)
+[找到Linux虚机Load高的"元凶"](https://www.jianshu.com/p/3edc2c9f05e9)
