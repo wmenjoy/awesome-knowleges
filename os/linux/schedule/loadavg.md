@@ -1,5 +1,5 @@
 
-### 定义
+## 定义
 
 [Wikipedia](https://en.wikipedia.org/wiki/Load_(computing))的定义：
 > In UNIX computing, **the system load** is a measure of the amount of computational work that a computer system performs. The load average represents the average system load over a period of time. It conventionally appears in the form of three numbers which represent the system load during the last one-, five-, and fifteen-minute periods.
@@ -13,7 +13,7 @@
 
 对于linux而言： run queue  waiting for disk I/O 是影响load 的因素
 
-### 获取loadavg的方式
+## 获取loadavg的方式
 
 - cat /prod/loadavg: 解释参考
   
@@ -53,13 +53,13 @@
     root     pts/0    192.168.217.1    13:56    6.00s  0.05s  0.00s w
   ```
 
-### loadavg 如何计算
+## loadavg 如何计算
 
-#### Exponentially Decaying Average 
+### Exponentially Decaying Average 
 
 
 
-#### 计算公式
+### 计算公式
 
 在每次采样的时候, 核心计算简化逻辑如下
 
