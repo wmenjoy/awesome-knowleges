@@ -37,8 +37,8 @@ https://juejin.im/post/5d350e70f265da1b897b0cbe?utm_source=gold_browser_extensio
 
 ## 相关工具
 
-  [go 包管理](utils/go_package_management.md)
-  [go 代码阅读](https://github.com/TrueFurby/go-callvis)
+1. [go 包管理](utils/go_package_management.md)
+2. [go 代码阅读](https://github.com/TrueFurby/go-callvis)
 
 ## 参考资料
 
