@@ -8,6 +8,8 @@
 
 ## 日志脱敏
 
+[参考](log_desensitization.md)
+
 ## 日志匹配
 
 
