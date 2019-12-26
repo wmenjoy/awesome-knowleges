@@ -142,8 +142,8 @@ calc_load(unsigned long load, unsigned long exp, unsigned long active)
 ``` bash
  avenrun[0] = ((FIXED_1 - EXP_1) * active + EXP_1 * avenrun[0]) / FIXED_1;
 ```
-根据 linux内核[include/linux/sched/loadavg.h](https://github.com/torvalds/linux/blob/master/include/linux/sched/loadavg.h) 定义```EXP_1=1884```而```FIXED_1=1<<11```, 通过替换 $\Delta$t=5, t=60后得到的公式为
-      $L(t) = ({1 - e^{-1/12}})p(t) + e^{-1/12}L(t-{\Delta}t)$
+根据 linux内核[include/linux/sched/loadavg.h](https://github.com/torvalds/linux/blob/master/include/linux/sched/loadavg.h) 定义```EXP_1=1884```而```FIXED_1=1<<11```, 通过替换 &Delta;t=5, t=60后得到的公式为
+      ![image](images/loadavg_real.png)
 **Linux**内核为了加速计算，采用shift 11位来计算，也就是  $e^{-1/12} * 2^{11}的$近似计算值为1884。 
 　
 
