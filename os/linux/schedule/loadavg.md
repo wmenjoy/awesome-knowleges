@@ -145,7 +145,7 @@ calc_load(unsigned long load, unsigned long exp, unsigned long active)
 ```
 根据 linux内核[include/linux/sched/loadavg.h](https://github.com/torvalds/linux/blob/master/include/linux/sched/loadavg.h) 定义```EXP_1=1884```而```FIXED_1=1<<11```, 通过替换 &Delta;t=5, t=60后得到的公式为
 
-      ![image](images/loadavg_real.png)
+![image](images/loadavg_real.png)
       
 **Linux**内核为了加速计算，采用shift 11位来计算，也就是  ![image](images/loadavg_e12211.png)的近似计算值为1884。 
 　
