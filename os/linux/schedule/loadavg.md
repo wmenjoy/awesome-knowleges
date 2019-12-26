@@ -147,7 +147,7 @@ calc_load(unsigned long load, unsigned long exp, unsigned long active)
 
       ![image](images/loadavg_real.png)
       
-**Linux**内核为了加速计算，采用shift 11位来计算，也就是  ![image](images/loadavg_e12211.png)的$近似计算值为1884。 
+**Linux**内核为了加速计算，采用shift 11位来计算，也就是  ![image](images/loadavg_e12211.png)的近似计算值为1884。 
 　
 
 ## References
