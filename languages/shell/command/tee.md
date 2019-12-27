@@ -1,7 +1,8 @@
 # tee
 ## 命令简介
 ### linux 的描述
->NAME
+```
+NAME
        tee - read from standard input and write to standard output and files
 
 SYNOPSIS
@@ -9,9 +10,11 @@ SYNOPSIS
 
 DESCRIPTION
        Copy standard input to each FILE, and also to standard output.
-       
+
+```
 ### mac 的描述
->NAME
+```
+NAME
      tee -- pipe fitting
 
 SYNOPSIS
@@ -19,6 +22,7 @@ SYNOPSIS
 
 DESCRIPTION
      The tee utility copies standard input to standard output, making a copy in zero or more files.  The output is unbuffered.
+```
 ### 兼容性
 1、 Mac系统的echo 是内置命令， linux 位于/bin/echo
 
