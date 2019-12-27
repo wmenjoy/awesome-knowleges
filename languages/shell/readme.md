@@ -1,6 +1,9 @@
+# Shell 知识大观
 
-# Linux 进程研究
-## pgrep 模拟
+
+
+## Linux 进程研究
+### pgrep 模拟
 ```shell
 find /proc -maxdepth 2 -name cmdline  -exec grep -in "java" {} \;|grep -v find|while read LINE; do  path=${LINE:15}; echo -n "${pat/*} "; if [ -f "${LINE:9}" ]; then cat ${LINE:9};echo -e ""; fi done
 ```
