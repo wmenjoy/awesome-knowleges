@@ -4,7 +4,7 @@
 
 [mac和Linux命令对比:持续更新](posix_commond.md)
 
-## Linux 进程研究、
+## Linux 进程研究
 
 ### pgrep 模拟
 
