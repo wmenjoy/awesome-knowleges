@@ -21,16 +21,24 @@ SYNOPSIS
      tee [-ai] [file ...]
 
 DESCRIPTION
-     The tee utility copies standard input to standard output, making a copy in zero or more files.  The output is unbuffered.
+     The tee utility copies standard input to standard output, making a copy in zero or more files.  
+     The output is unbuffered. file  A pathname of an output file. The tee utility takes the default action for all signals, except in the event of the -i option. The tee utility exits 0 on success, and >0 if an error occurs.
 ```
-### 兼容性
-1、 Mac系统的echo 是内置命令， linux 位于/bin/echo
+## 兼容性说明
+```
+-a        [Linux]: append to the given FILEs, do not overwrite
+          [Mac]: Append the output to the files rather than overwriting them.
 
-2、两者支持共同的-n命令
+-i        [Linux]: ignore interrupt signals
+          [Mac]: Ignore the SIGINT signal.
+
+```
 
 ## 用途
-### 1、输出文本到文件
+### 1、输出到多个文件
 
-### 2、用作函数的结果
+### 2.拷贝输入到文件
 
 ## 参考
+
+[man7: tee(1)](http://man7.org/linux/man-pages/man1/tee.1.html)
