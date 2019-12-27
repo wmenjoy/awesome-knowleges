@@ -1,7 +1,7 @@
 # Shell 知识大观
 
-## 命令学习
-[命令学习](posix_commond.md)
+## 命令
+[mac和Linux命令对比:持续更新](posix_commond.md)
 
 ## Linux 进程研究
 ### pgrep 模拟
