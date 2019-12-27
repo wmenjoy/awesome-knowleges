@@ -17,7 +17,7 @@ JQ命令专门处理json 数据可以参考 [JQ Manual](https://stedolan.github.
 
 ### 输出到多个文件
 
-参考tee命令
+参考[tee](command/tee.md)
 ``` java
 ls -al|tee -a 1.output
 
