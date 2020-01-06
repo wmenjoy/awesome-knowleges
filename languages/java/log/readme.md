@@ -1,6 +1,6 @@
 # 日志
 
-## 日志冲突
+## 日志包冲突
 
 ## 日志调优
 
@@ -20,3 +20,4 @@
 
 http://www.360doc.com/content/16/0624/19/1073512_570470152.shtml
 https://blog.csdn.net/xinwengong/article/details/51607173
+[日志包冲突](https://juejin.im/post/5e0e8f8b6fb9a048217a165a)
