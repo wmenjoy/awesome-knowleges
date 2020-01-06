@@ -123,3 +123,4 @@ telegraf 具体的配置在/etc/telegraf/telegraf.conf。关于agent的配置如
 7. [UNIX Load Average Part 2: Not Your Average Average](https://www.helpsystems.com/resources/guides/unix-load-average-part-2-not-your-average-average)
 8. [Understand Linux Load Averages and Monitor Performance of Linux](https://github.com/wmenjoy/awesome-knowleges/edit/master/os/linux/schedule/system_hign_problem.md)
 9. [找到Linux虚机Load高的"元凶"](https://www.jianshu.com/p/3edc2c9f05e9)
+10. [cpu load过高问题排查](https://www.cnblogs.com/lddbupt/p/5779655.html)
