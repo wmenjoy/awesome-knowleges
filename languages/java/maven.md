@@ -375,7 +375,7 @@ mvn archetype:generate -Dpackage=cn.org.my.package -DgroupId=cn.org.my.group -Da
 ```
 
 ### 2.11.3 参考
-[archetype:create-from-project munual](http://maven.apache.org/archetype/maven-archetype-plugin/create-from-project-mojo.html)
+[archetype:create-from-project manual](http://maven.apache.org/archetype/maven-archetype-plugin/create-from-project-mojo.html)
 
 
 ## 2.22 如何自定义打包软件
