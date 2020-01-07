@@ -23,9 +23,12 @@ ls -al|tee -a 1.output
 
 ```
 
+### Linux 录屏命令
+
 
 
 ##  参考
 
 1. [命令行工具](https://juejin.im/post/5d89899ef265da03a95076fb?utm_source=gold_browser_extension)
-1. [proc研究](../../os/linux/file/proc.md)
+2. [proc研究](../../os/linux/file/proc.md)
+3. [Linux 下记录工具（history，screen，script）使用](https://www.linuxidc.com/Linux/2013-10/91614.htm)
