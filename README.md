@@ -129,3 +129,4 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 7. [互联网产品](https://github.com/davideuler/architecture.of.internet-product)
 8. [resources](https://github.com/shishan100/Java-Interview-Advanced)
 9. [block](https://blog.csdn.net/zhanglh046/article/list/1)
+10. [牛人的2018总结](https://www.jianshu.com/p/bc4224171d1d)
