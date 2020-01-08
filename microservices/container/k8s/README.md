@@ -57,6 +57,7 @@
 [K8s学习资源](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 [K8s中Service的理解](k8s中service的理解)
 [k8s图](https://www.jianshu.com/p/56671146d69c)
+[以图形化方式了解k8s](http://dockone.io/article/9567)
 
 
 # CNI
@@ -66,4 +67,6 @@
 ## 无服务
 
 [Openwhisk](https://github.com/apache/openwhisk)
+
+
 
