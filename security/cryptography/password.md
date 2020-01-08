@@ -16,6 +16,7 @@ Try to test how seucre is your password using [howsecureismypassword](https://ho
 * Phishing
 * A brute force attack
 * Yours passwords is kept in insecure locations
+* your password is too weak
 
 ## What's weak password
 
