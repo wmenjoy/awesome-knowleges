@@ -58,7 +58,7 @@
 [K8s中Service的理解](k8s中service的理解)
 [k8s图](https://www.jianshu.com/p/56671146d69c)
 [以图形化方式了解k8s](http://dockone.io/article/9567)
-
+[awesomek8s](https://github.com/wmenjoy/awesome-kubernetes-notes)
 
 # CNI
 1. [Aliyun Terway](https://github.com/AliyunContainerService/terway)
