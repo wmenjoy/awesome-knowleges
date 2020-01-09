@@ -93,7 +93,10 @@ randpw(){ < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-16};echo;}
 ```
 vgBX8cNo950RiykZRpPYa4BvbAvZbY_x
 ```
-## 6 使用古诗词生成密码
+
+## 便于记忆的密码
+
+### 1. 使用古诗词生成密码
 
 参考[黄药师的古诗词生成文章](https://github.com/bingoohuang/blog/issues/22)
 
