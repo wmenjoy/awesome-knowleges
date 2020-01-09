@@ -3,7 +3,8 @@
 ## 介绍
 
 ## 语言
-
+### 异常处理
+1. [9 Best Practices to Handle Exceptions in Java](https://stackify.com/best-practices-exceptions-java/)
 ## 扩展
 
 
