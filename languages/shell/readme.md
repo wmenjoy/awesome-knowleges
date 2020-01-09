@@ -3,6 +3,7 @@
 ## 命令
 
 [mac和Linux命令对比:持续更新](posix_commond.md)
+[Speed Test: Check the Existence of a Command in Bash and Zsh](https://www.topbug.net/blog/2016/10/11/speed-test-check-the-existence-of-a-command-in-bash-and-zsh/)
 
 ## Linux 进程研究
 
