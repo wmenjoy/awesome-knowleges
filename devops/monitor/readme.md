@@ -1,6 +1,11 @@
 
 ## 监控系统简介
 
+
+## RUM和其他
+
+1. [rum vs synthetic monitoring](https://stackify.com/rum-vs-synthetic-monitoring/)
+
 ## 监控系统包括哪些方面
 
 * [Metrics](metrics/readme.md)
