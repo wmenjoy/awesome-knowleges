@@ -64,7 +64,7 @@ ZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4
 ### 5 /dev/urandom 生成随机数
 #### 使用内嵌的/dev/urandom，并过滤掉那些日常不怎么使用的字符。这里也只输出结果的前32个字符：
 ```
-< /dev/urandom tr -dc _A-Z-a-z-0-9 |head -c${1:-32};echo
+< /dev/urandom tr -dc _A-Z-a-z-0-9 |head -c32;echo
 ```
 生成结果如下:
 ```
