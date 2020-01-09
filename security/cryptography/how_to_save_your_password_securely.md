@@ -14,3 +14,5 @@
 
 类似的可参考[黄老邪使用古诗词创建好记的密码 #22](https://github.com/bingoohuang/blog/issues/22)
 
+## 参考
+[Manage Passwords for Multiple Accounts with Checksums](https://www.topbug.net/blog/2016/04/30/manage-passwords-for-multiple-accounts-with-checksums/)
