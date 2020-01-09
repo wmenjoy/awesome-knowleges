@@ -16,10 +16,9 @@
 类似的可参考[黄老邪使用古诗词创建好记的密码 #22](https://github.com/bingoohuang/blog/issues/22)
 
 ## 参考
-[Manage Passwords for Multiple Accounts with Checksums](https://www.topbug.net/blog/2016/04/30/manage-passwords-for-multiple-accounts-with-checksums/)
-
-[1]: 校验和是小型字符串，可以通过特定的校验和算法从其他字符串中计算出来。 使用最流行的校验和算法，例如 MD5、 SHA-1等，校验和通常看起来与原始字符串非常不同，甚至改变原始字符串的一个比特通常导致非常不同的校验和。 例如，两个相似的单词“ bird”和“ birds”的 MD5校验和是完全不同的(你可以使用本网站计算一个字符串的校验和，或者使用 gnu / linux 或 Max OS x 的 md5sum 或 sha1sum 命令行工具) :
+1. [1]: 校验和是小型字符串，可以通过特定的校验和算法从其他字符串中计算出来。 使用最流行的校验和算法，例如 MD5、 SHA-1等，校验和通常看起来与原始字符串非常不同，甚至改变原始字符串的一个比特通常导致非常不同的校验和。 例如，两个相似的单词“ bird”和“ birds”的 MD5校验和是完全不同的(你可以使用本网站计算一个字符串的校验和，或者使用 gnu / linux 或 Max OS x 的 md5sum 或 sha1sum 命令行工具) :
 STRING|MD5 CHECKSUM
 -------|-------------
 bird |87d28160e9215b17645c734ba7170ba1
 birds| ea5f5a5293a7d404e091c04939ba2ad8
+2. [Manage Passwords for Multiple Accounts with Checksums](https://www.topbug.net/blog/2016/04/30/manage-passwords-for-multiple-accounts-with-checksums/)
