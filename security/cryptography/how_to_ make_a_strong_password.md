@@ -1,14 +1,16 @@
 # 谈一谈密码
+## 测试密码强度
 来试一下你自己的密码有多安全[点击](https://howsecureismypassword.net/)， 安全意识从我们自己做起哦
 网站如下图
 ![image](./images/how_to_breakpassword.png)
 好了，来看点有用的东西，快速生成安全的密码。更多请关注[password](https://github.com/wmenjoy/awesome-knowleges/blob/master/security/cryptography/password.md)
-## 1. 使用openssh 
+## 生成密码
+### 1. 使用openssh 
 ```
   openssl rand -base64 14
 ```
 ![image](images/openssh.png)
-## 2. pwgen
+### 2. pwgen
 pwgen 是一个简单却非常有用的命令行工具，用它可以在短时间内生成一个随机且高强度的密码。它设计出的安全密码可以被人们更容易地记住。在大多数的类 Unix 系统中都可以获取到它。
 
 在基于 RPM 的系统中，运行：
@@ -41,7 +43,7 @@ pwgen 14 1
 -v 或 --no-vowels 不使用任何元音字母，以防止生成下流的词语 ```
 
 ```
-## 3. 使用GPG
+### 3. 使用GPG
 GPG (GnuPG 或 GNU Privacy Guard) 是一个自由开源的命令行程序，可以用于替代赛门铁克的 PGP 加密软件。在类 Unix 操作系统、Microsoft Windows 和 Android 中都可以获取到它。
 ``` 
 gpg --gen-random --armor 1 14
@@ -51,7 +53,7 @@ gpg --gen-random --armor 1 14
 DkmsrUy3klzzbIbavx8=
 ```
 
-## 4. 使用SHA算法来加密日期，并输出结果的前32个字符：
+### 4. 使用SHA算法来加密日期，并输出结果的前32个字符：
 ``` bash
 date +%s |sha256sum |base64 |head -c 32 ;echo
 ```
@@ -59,8 +61,8 @@ date +%s |sha256sum |base64 |head -c 32 ;echo
 ```
 ZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4
 ```
-## 5 /dev/urandom 生成随机数
-### 使用内嵌的/dev/urandom，并过滤掉那些日常不怎么使用的字符。这里也只输出结果的前32个字符：
+### 5 /dev/urandom 生成随机数
+#### 使用内嵌的/dev/urandom，并过滤掉那些日常不怎么使用的字符。这里也只输出结果的前32个字符：
 ```
 < /dev/urandom tr -dc _A-Z-a-z-0-9 |head -c${1:-32};echo
 ```
@@ -68,7 +70,7 @@ ZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4
 ```
 pDj0Xwz7exD_Qb5B27BwWsM1hrF3a7cJ
 ```
-### 使用string命令，它从一个文件中输出可打印的字符串
+#### 使用string命令，它从一个文件中输出可打印的字符串
 ```
 strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 32 | tr -d '\n'; echo
 ```
@@ -76,7 +78,7 @@ strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 32 | tr -d '\n'; echo
 ```
 W4v1iQtkmQ8sIDd9jxDQNpg8HPMOZ8
 ```
-### 使用非常有用的dd命令
+#### 使用非常有用的dd命令
 ```
 dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64 -w 0 | rev | cut -b 2- | rev
 ```
@@ -94,9 +96,9 @@ randpw(){ < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-16};echo;}
 vgBX8cNo950RiykZRpPYa4BvbAvZbY_x
 ```
 
-## 便于记忆的密码
+### 便于记忆的密码
 
-### 1. 使用古诗词生成密码
+#### 1. 使用古诗词生成密码
 
 参考[黄药师的古诗词生成文章](https://github.com/bingoohuang/blog/issues/22)
 
