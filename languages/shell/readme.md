@@ -23,9 +23,11 @@ ls -al|tee -a 1.output
 
 ```
 
+### A Better Linux Command
+参考[此处](https://www.topbug.net/blog/2016/11/28/a-better-ls-command/#more-953)
 ### Linux 录屏命令
 
-
+script
 
 ##  参考
 
