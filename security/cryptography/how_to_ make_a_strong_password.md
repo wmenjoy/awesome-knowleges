@@ -1,13 +1,13 @@
 # 谈一谈密码
 来试一下你自己的密码有多安全[点击](https://howsecureismypassword.net/)， 安全意识从我们自己做起哦
 网站如下图
-![image](/uploads/d6234c25a312ec15af2f46907c7106ef/image.png)
+![image](./images/how_to_make_password.png)
 好了，来看点有用的东西，快速生成安全的密码。更多请关注[password](https://github.com/wmenjoy/awesome-knowleges/blob/master/security/cryptography/password.md)
 ## 1. 使用openssh 
 ```
   openssl rand -base64 14
 ```
-![image](/uploads/9769b17b9b2d85b38d5f112822e1b066/image.png)
+![image](/images/openssh.png)
 ## 2. pwgen
 pwgen 是一个简单却非常有用的命令行工具，用它可以在短时间内生成一个随机且高强度的密码。它设计出的安全密码可以被人们更容易地记住。在大多数的类 Unix 系统中都可以获取到它。
 
@@ -23,7 +23,7 @@ sudo apt-get install pwgen
 ```
 pwgen 14 1
 ```
-![image](/uploads/b6f243432f0c78221a79ccf9e733c6c8/image.png)
+![image](/images/pwgeen.png)
 
 另外，pwgen 命令还有一些很实用的选项：
 ```
