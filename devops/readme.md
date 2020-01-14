@@ -13,3 +13,9 @@
 
 4. [T](https://stackify.com/top-devops-blogs/)
 5. [AIop](https://www.cnblogs.com/shawhe/p/11072033.html)
+6. [aiops-handbook](https://github.com/chenryn/aiops-handbook)
+7. [awesome-AIOps](https://github.com/linjinjin123/awesome-AIOps)
+8. [AIOPS_PLATFORM](https://github.com/kylechenoO/AIOPS_PLATFORM)
+9. [AIOPS](https://github.com/martinliu/aiops)
+10. [LogAnaysis](https://github.com/logpai/loglizer)
+11. [Log Analysis](https://github.com/logpai/awesome-log-analysis)
