@@ -124,3 +124,4 @@ telegraf 具体的配置在/etc/telegraf/telegraf.conf。关于agent的配置如
 8. [Understand Linux Load Averages and Monitor Performance of Linux](https://github.com/wmenjoy/awesome-knowleges/edit/master/os/linux/schedule/system_hign_problem.md)
 9. [找到Linux虚机Load高的"元凶"](https://www.jianshu.com/p/3edc2c9f05e9)
 10. [cpu load过高问题排查](https://www.cnblogs.com/lddbupt/p/5779655.html)
+11. [CPU Load](https://segmentfault.com/a/1190000008322093)
