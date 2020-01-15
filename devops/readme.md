@@ -24,3 +24,4 @@
 10. [LogAnaysis](https://github.com/logpai/loglizer)
 11. [Log Analysis](https://github.com/logpai/awesome-log-analysis)
 12. [AIOPS](https://github.com/Kaiser-love/AIOPS)
+13. [大规模的可观察性：构建Uber的预警生态系统](https://segmentfault.com/a/1190000021362596)
