@@ -13,6 +13,7 @@
 2. [Linux 内存使用情况](https://segmentfault.com/a/1190000008125059)
 3. [Linux 交换空间](https://segmentfault.com/a/1190000008125116)
 4. [Linux虚拟文件系统](https://segmentfault.com/a/1190000008476809)
+5. [Linux OOM Killer](https://segmentfault.com/a/1190000008268803)
 
 ## 进程
 
