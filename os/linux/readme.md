@@ -12,6 +12,18 @@
 1. [Linux 内存管理](https://segmentfault.com/a/1190000008125006)
 2. [Linux 内存使用情况](https://segmentfault.com/a/1190000008125059)
 3. [Linux 交换空间](https://segmentfault.com/a/1190000008125116)
+4. [Linux虚拟文件系统](https://segmentfault.com/a/1190000008476809)
+
+## 进程
+
+### tty
+1. [Linux session和进程组概述](https://segmentfault.com/a/1190000006917884)
+
+
+## 文件系统
+1. [Btrfs文件系统之subvolume与snapshot](https://segmentfault.com/a/1190000008605135)
+2. [Linux文件系统之aufs](https://segmentfault.com/a/1190000008489207)
+3. [Linux常见文件系统对比](https://segmentfault.com/a/1190000008481493)
 
 ## NameSpace
 
@@ -25,6 +37,13 @@
 1. [Linux Namespace系列（08）：user namespace (CLONE_NEWUSER) (第二部分)](https://segmentfault.com/a/1190000006913499)
 1. [Linux Namespace系列（09）：利用Namespace创建一个简单可用的容器](https://segmentfault.com/a/1190000006913509)
 
+## cgroup
+
+1. [Linux Cgroup系列（01）：Cgroup概述](https://segmentfault.com/a/1190000006917884)
+1. [Linux Cgroup系列（02）：创建并管理cgroup](https://segmentfault.com/a/1190000007241437)
+1. [Linux Cgroup系列（03）：限制cgroup的进程数（subsystem之pids）](https://segmentfault.com/a/1190000007468509)
+1. [Linux Cgroup系列（04）：限制cgroup的内存使用（subsystem之memory）](https://segmentfault.com/a/1190000008125359)
+1. [Linux Cgroup系列（05）：限制cgroup的CPU使用（subsystem之cpu）](https://segmentfault.com/a/1190000008323952)
 
 ## 原理
 1. [启动过程](https://segmentfault.com/a/1190000006872609)
