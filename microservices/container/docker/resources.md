@@ -4,6 +4,8 @@
 
 [docker web](https://docs.docker.com/)
 
+[容器管理](https://segmentfault.com/a/1190000006908063)
+
 
 # Docker Registry
 
