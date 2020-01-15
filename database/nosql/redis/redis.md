@@ -13,3 +13,7 @@
 ## 9、消息系统
 # Redis的存储结构
 https://juejin.im/post/5dacfe2fe51d452b32181efb
+
+## 参考
+
+[关于Redis的记忆](https://juejin.im/post/5e1d217be51d451c88361cb6?utm_source=gold_browser_extension)
