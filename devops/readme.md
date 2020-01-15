@@ -3,6 +3,10 @@
 
 1. [What is DevOps](https://stackify.com/what-is-devops-2/)
 
+## 工具
+
+[高级Ansible](https://www.ibm.com/developerworks/cn/linux/1608_lih_ansible/index.html)
+
 ## 资源
 
 1. [4 个概念，1 个动作，让应用管理变得更简单](https://juejin.im/post/5de607bae51d45581133df35?utm_source=gold_browser_extension)
