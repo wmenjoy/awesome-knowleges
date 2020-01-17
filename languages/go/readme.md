@@ -10,6 +10,7 @@
 7. 原理
 ## 编程规范
 [Uber go 语言编程规范](http://dockone.io/article/9331)
+[Go 语言实践：编写可维护的程序的建议](https://juejin.im/post/5e0ab70ef265da5d0f098988)
 ## go 工具包
 
 [etcd 实现锁](https://github.com/zieckey/etcdsync)
@@ -43,7 +44,7 @@ https://juejin.im/post/5d350e70f265da1b897b0cbe?utm_source=gold_browser_extensio
 
 ## 开源框架
  1. [gf](https://github.com/gogf/gf)
-
+ 2. [go资源库](https://juejin.im/post/5de082a95188256f9a25384f)
 ## 参考资料
 
 入门：https://github.com/lindzh/leaning-go/tree/master/src/main
