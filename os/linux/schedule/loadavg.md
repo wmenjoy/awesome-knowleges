@@ -1,4 +1,16 @@
 
+## 引子
+
+有没有遇到过：
+
+1. 刚上线的应用，还没有引流量，好不容易接入监控，却时不时的来n多条CPU load过高的报警？
+
+2. 一头雾水的你，翻看各种日志，执行各种命令，却抓不到任何消息？
+
+
+好了，不打哑谜，我们来一步一步揭秘？
+
+
 ## 定义
 
 [Wikipedia](https://en.wikipedia.org/wiki/Load_(computing))的定义：
@@ -56,7 +68,8 @@
 ## loadavg 如何计算
 
 ### Exponentially Decaying Average 
-参考[Moving Average](https://zh.wikipedia.org/wiki/%E7%A7%BB%E5%8B%95%E5%B9%B3%E5%9D%87），指数平均比其他平均值，更能体现真实的情况
+
+参考[Moving Average](https://zh.wikipedia.org/wiki/%E7%A7%BB%E5%8B%95%E5%B9%B3%E5%9D%87)，指数平均比其他平均值，更能体现真实的情况
 加入我们把nr_active在某一时刻的数量叫做p(t)，我们计算loadavg的时间段是T，采样室 &Delta t;那么计算公式如下
 
 ![init](images/totalavg_init.png)
