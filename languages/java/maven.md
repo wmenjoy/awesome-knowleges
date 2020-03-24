@@ -422,4 +422,9 @@ class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->
 
 
 
-
+# 参考
+1. [Versions Maven Plugin](http://www.mojohaus.org/versions-maven-plugin/)
+2. [How do I tell Maven to use the latest version of a dependency?](https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency)
+3. [maven升级、切换](https://blog.csdn.net/weixin_33676492/article/details/91589647)
+2. [How do I tell Maven to use the latest version of a dependency?](https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency)
+2. [How do I tell Maven to use the latest version of a dependency?](https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency)
