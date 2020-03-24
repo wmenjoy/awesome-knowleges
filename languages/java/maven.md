@@ -426,3 +426,5 @@ class hierarchy being processed was [org.bouncycastle.asn1.ASN1EncodableVector->
 1. [Versions Maven Plugin](http://www.mojohaus.org/versions-maven-plugin/)
 2. [How do I tell Maven to use the latest version of a dependency?](https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency)
 3. [maven升级、切换](https://blog.csdn.net/weixin_33676492/article/details/91589647)
+4. [Run Maven Enforcer Plugin rule on command line](https://stackoverflow.com/questions/22157668/run-maven-enforcer-plugin-rule-on-command-line)
+5. [Generic Plugin configuration information](https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html)
