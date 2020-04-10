@@ -90,8 +90,8 @@ sub: DONE
 docker 本身要求服务必须有一个前台进程。如果前台进程正常退出就表示这个程序已经执行完成。 而我们的传统服务程序，大多数都是后台程序，那么如何去适配呢?
 
 ### 方案
-1. 修改程序的启动方式为前台启动
-2. docker本身执行的程序和我们程序本身分离。docker执行的程序就相当于我们的管理程序，我们的程序继续以后台程序执行
+1. 修改程序的启动方式为前台启动, (注意使用exec 来启动进程，负责我们真正执行的程序并不能接收到这个信号量来退出)
+2. docker本身执行的程序和我们程序本身分离。docker执行的程序就相当于我们的管理程序，我们的程序继续以后台程序执行.(需要保证主进程能把信号发给正确的子进程）
 
 ### 方案比较：
 #### 1. 方案一：
@@ -109,5 +109,18 @@ docker 本身要求服务必须有一个前台进程。如果前台进程正常�
       
       
   
-
+## 参考
+1. [在脚本中使用 trap
+](https://www.ibm.com/developerworks/cn/aix/library/au-usingtraps/index.html)
+2. [Stopping Docker Containers Gracefully
+](https://dzone.com/articles/stopping-docker-containers-gracefully-3)
+3. [	
+Gracefully Stopping Docker Containers
+](https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/)
+4. [The Bash Trap Command
+](https://www.linuxjournal.com/content/bash-trap-command)
+5. [Linux Shell 编程中的 trap 的小坑
+](https://www.zybuluo.com/zwh8800/note/388397)
+6. [Bash中的 trap 和 wait
+](http://blog.chinaunix.net/uid-20644632-id-5132225.html)
 
