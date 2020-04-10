@@ -27,6 +27,19 @@ exit 0
 ```
 **trap term_exit TERM** 表示整个程序会特殊处理TERM 信号量，接收到信号处理后，会执行term_exit TERM, 下一个trap 类似
 ** trap - TERM INT** 清理信号量
+程序执行的结果如下如下
+```
+[root@fs03-192-168-126-18 temp]# sh sub.sh
+^Csub: INT terminated
+sub: DONE
+[root@fs03-192-168-126-18 temp]# sh sub.sh &
+[1] 6577
+[root@fs03-192-168-126-18 temp]# kill 6577
+[root@fs03-192-168-126-18 temp]# sub: TERM terminated
+sub: DONE
+```
+
+
 ## 多进程的退出
 这种情况下，我们一般有个管理进程。 我们需要发给管理进程信号量，由管理进程，根据信号来分别处理子进程。
 针对子进程和父进程之间的通信，信号量，socket都是很好的工具，此外，linux还提供了一个很有用的工具[wait](http://man7.org/linux/man-pages/man1/wait.1p.html)，可以监听子进程信号的退出。
@@ -60,7 +73,15 @@ exit 0
 
 其中
 **wait $sub_pid || exit  true** 用来等待子进程的退出， 如果有异常忽略
-
+程序执行的结果如下如下
+```bash
+[root@fs03-192-168-126-18 temp]# sh main.sh
+^Cpid is 13184
+main: terminated
+main: DONE
+[root@fs03-192-168-126-18 temp]# sub: TERM terminated
+sub: DONE
+```
 这里注意子进程最好是通过后台进程来做，因为trap是在执行完一条命令结束后才会响应对应的信号量，而这个可能会导致一些小问题。
 
 
