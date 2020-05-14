@@ -15,10 +15,8 @@
 内容|网址
 ---|:--:|
 日志|[log4j2](https://blog.csdn.net/CSDN___LYY/article/details/84394244)
-
-名称|网址
----|:--:|
 maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/languages/java/maven.md)
+可视化|[java可视化](https://cscircles.cemc.uwaterloo.ca/java_visualize/#mode=edit)
 
 ### Shell
 
