@@ -23,3 +23,5 @@ i:如果对文件设置i属性,那么不允许对文件进行删除、改名、�
 
 # 参考
 1. [Linux文件属性命令chattr](https://www.cnblogs.com/iaknehc/p/6891867.html)
+2. [5 Practical “chattr” Command Usage Examples in Linux
+](https://www.sanfoundry.com/5-practical-chattr-command-usage-examples-in-linux/)
