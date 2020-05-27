@@ -36,6 +36,10 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 内容|网址
 ---|--|
 资源|https://github.com/avelino/awesome-go
+
+## 算法
+1. [算法可视化](https://github.com/algorithm-visualizer/algorithm-visualizer)
+
 ## 操作系统
 ### Linux
 
