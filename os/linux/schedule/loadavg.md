@@ -70,7 +70,7 @@
 ### Exponentially Decaying Average 
 
 参考[Moving Average](https://zh.wikipedia.org/wiki/%E7%A7%BB%E5%8B%95%E5%B9%B3%E5%9D%87)，指数平均比其他平均值，更能体现真实的情况
-加入我们把nr_active在某一时刻的数量叫做p(t)，我们计算loadavg的时间段是T，采样室 &Delta t;那么计算公式如下
+加入我们把nr_active在某一时刻的数量叫做p(t)，我们计算loadavg的时间段是T，采样室 &Delta;t;那么计算公式如下
 
 ![init](images/totalavg_init.png)
 
