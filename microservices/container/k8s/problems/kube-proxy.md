@@ -6,9 +6,9 @@
 
 1. 现象
 
-  ``` bash
-        I0831 09:54:43.941698   26922 proxier.go:793] Not using `--random-fully` in the MASQUERADE rule for iptables because the local version of iptables does not     support it
-  ```
+    ``` bash
+        I0831 09:54:43.941698   26922 proxier.go:793] Not using `--random-fully` in the MASQUERADE rule for iptables because the local version of iptables does not      support it
+    ```
   
 1. 分析
 
