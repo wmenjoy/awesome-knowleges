@@ -3,11 +3,15 @@
 ## 问题
 
 ### 1. kube-proxy 日志一直有 --random-fully日志输出
+
 1. 现象
+
   ``` bash
-  I0831 09:54:43.941698   26922 proxier.go:793] Not using `--random-fully` in the MASQUERADE rule for iptables because the local version of iptables does not support it
+        I0831 09:54:43.941698   26922 proxier.go:793] Not using `--random-fully` in the MASQUERADE rule for iptables because the local version of iptables does not     support it
   ```
+  
 1. 分析
+
    从日志的分析来看。 这个应该当前kube-proxy的版本不对导致, the Flag `--random-fully`出现在[kernetes 1.16: proxier](https://github.com/kubernetes/kubernetes/blob/efb461bc0727030dfcbdc6cfdc8ef054049d20bc/pkg/proxy/iptables/proxier.go#L789)
    对于iptables 来说，起源于`https://patchwork.ozlabs.org/patch/844016/`
    > There is a known race condition when allocating a port for masquerading that
@@ -26,13 +30,16 @@
         IPv6 support available since Linux kernels >= 3.7.
    
    主要是为了出来高负载情况下，出现的锁竞争问题。 所以开启和不开启，对于负载低的集群来说，影响不大， 如果要安装需要 iptable的版本是`1.6.2` 内核版本大于`3.13`. 我们的内核版本满足要求，而iptables 不满足
+   
    ```bash 
     iptables -v
     iptables v1.6.0
     root@fs02-192-168-126-16:/# uname -a
     Linux fs02-192-168-126-16 4.4.222-1.el7.elrepo.x86_64 #1 SMP Mon May 4 19:25:23 EDT 2020 x86_64 GNU/Linux
    ```
+   
 1. 解决
+
   ```bash
   apt remove --purge iptables && \
     apt autoremove -y && \
@@ -42,6 +49,7 @@
             libxtables12=1.6.2-1.1~bpo9+1 \
             iptables=1.6.2-1.1~bpo9+1
   ```
+  
   重启kube-proxy
   如果是rancher 需要在kube-proxy镜像中执行
 ## 参考
