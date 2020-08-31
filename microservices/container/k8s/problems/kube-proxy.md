@@ -10,7 +10,7 @@
 1. 分析
    从日志的分析来看。 这个应该当前kube-proxy的版本不对导致, the Flag `--random-fully`出现在[kernetes 1.16: proxier](https://github.com/kubernetes/kubernetes/blob/efb461bc0727030dfcbdc6cfdc8ef054049d20bc/pkg/proxy/iptables/proxier.go#L789)
    对于iptables 来说，起源于`https://patchwork.ozlabs.org/patch/844016/`
-   | There is a known race condition when allocating a port for masquerading that
+   > There is a known race condition when allocating a port for masquerading that
      can lead to insertion in the conntrack table to fail under heavy load, with an
      increment of the insert_failed counter. The kernel supports the
      NF_NAT_RANGE_PROTO_RANDOM_FULLY flag since [1] which uses prandom_u32() to
