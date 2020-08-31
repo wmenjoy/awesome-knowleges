@@ -2,7 +2,7 @@
 
 ## 问题
 
-### 1. kube-proxy 日志一直有 --random-fully日志输出
+### 一. kube-proxy 日志一直有 --random-fully日志输出
 
 1. 现象
 
