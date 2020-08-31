@@ -18,6 +18,10 @@
      significantly reduces the number of insertion collision. This patch provides
      the user space part to make randomize-full support available in iptables on the
      MASQUERADE target as it was done for SNAT [2].
+   关于Flag的描述：[iptables-extension.man](http://ipset.netfilter.org/iptables-extensions.man.html)
+   > --random-fully
+        Full randomize source port mapping If option --random-fully is used then port mapping will be fully randomized (kernel >= 3.13).
+        IPv6 support available since Linux kernels >= 3.7.
 1. 功能
 1. 影响
 1. 解决
