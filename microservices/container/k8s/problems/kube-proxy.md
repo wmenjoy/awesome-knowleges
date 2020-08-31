@@ -43,6 +43,7 @@
             iptables=1.6.2-1.1~bpo9+1
   ```
   重启kube-proxy
+  如果是rancher 需要在kube-proxy镜像中执行
 ## 参考
 
 1. [kubernets错误总结-及解决办法](https://www.gylinux.cn/2795.html)
