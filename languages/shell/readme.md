@@ -36,3 +36,4 @@ script
 2. [proc研究](../../os/linux/file/proc.md)
 3. [Linux 下记录工具（history，screen，script）使用](https://www.linuxidc.com/Linux/2013-10/91614.htm)
 1. [Effective Shell](https://effective-shell.com/docs/part-1-transitioning-to-the-shell/2-navigating-your-system/)
+1. [How to Type Less and Do More in Terminals | by Henry Huang | Mac O’Clock | Medium](https://medium.com/macoclock/how-to-type-less-and-do-more-in-terminals-ee2af303b512)
