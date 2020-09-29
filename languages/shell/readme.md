@@ -2,8 +2,8 @@
 
 ## 命令
 
-[mac和Linux命令对比:持续更新](posix_commond.md)
-[Speed Test: Check the Existence of a Command in Bash and Zsh](https://www.topbug.net/blog/2016/10/11/speed-test-check-the-existence-of-a-command-in-bash-and-zsh/)
+1. [mac和Linux命令对比:持续更新](posix_commond.md)
+1. [Speed Test: Check the Existence of a Command in Bash and Zsh](https://www.topbug.net/blog/2016/10/11/speed-test-check-the-existence-of-a-command-in-bash-and-zsh/)
 
 ## Linux 进程研究
 
@@ -35,3 +35,4 @@ script
 1. [命令行工具](https://juejin.im/post/5d89899ef265da03a95076fb?utm_source=gold_browser_extension)
 2. [proc研究](../../os/linux/file/proc.md)
 3. [Linux 下记录工具（history，screen，script）使用](https://www.linuxidc.com/Linux/2013-10/91614.htm)
+1. [Effective Shell](https://effective-shell.com/docs/part-1-transitioning-to-the-shell/2-navigating-your-system/)
