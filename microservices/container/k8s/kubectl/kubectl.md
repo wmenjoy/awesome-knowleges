@@ -31,6 +31,10 @@ kubectl run mynginx --image=nginx --replicas=2 --port 80 --expose=true --hostpor
 ## delete
 
 ```
-  kubectl run nginx --image=nginx
+kubectl run mynginx --image=nginx --replicas=2 --port 80 --expose=true --hostport=32251  --env "apply=mynginx" --labels="app=myngginx" --restart=Always
+#同时删除多个资源
+kubectl delete pod,service mynginx
+
+kubectl delete 
 
 ```
