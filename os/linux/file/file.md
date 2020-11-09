@@ -5,6 +5,9 @@
 1. 获取打开文件描述符最多的程序
 
 ``` bash
+# 查找文件句柄上线
+ulimit –a
+# 统计使用文件描述符最多的程序
 lsof -n|awk '{print $2}'|sort|uniq -c|sort -nr
 
 ```
