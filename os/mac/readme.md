@@ -6,6 +6,7 @@
 
 ## 编译问题
  1. x509: failed to load system roots and no roots provided;
+ 
  解决方法： 重置证书链
  Keychain Access -> Preferences... -> Reset my Default Keychains
  
