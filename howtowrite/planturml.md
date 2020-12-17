@@ -30,7 +30,7 @@ ConfigCenter --> VersionableObject
 效果如下
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/nio/rpc.txt)
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/test-network.txt)
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/json.txt)
+![b](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/json.txt)
 ![ar](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/a.txt)
 
 
