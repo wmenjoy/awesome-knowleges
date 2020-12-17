@@ -1,0 +1,28 @@
+@startjson
+{
+ "ids":{
+    "mysql":{
+       "db1":"jdbc://jdbc.mysql"
+     },
+    "redis":{
+       "redis1": "192.168.36.1:6036"
+     },
+    "http": {
+       "baidu": "http://www.baidu.com",
+       "google": "http://www.baidu.com"
+     }
+  },
+ "ids2":{
+    "mysql":{
+       "db1":"jdbc://jdbc.mysql"
+     },
+    "redis":{
+       "redis1": "192.168.36.1:6036"
+     },
+    "http": {
+       "baidu": "http://www.baidu.com",
+       "google": "http://www.baidu.com"
+     }
+  }
+}
+@endjson
