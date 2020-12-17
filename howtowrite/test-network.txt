@@ -9,7 +9,10 @@ nwdiag {
       mysql2 [address = "210.x.x.2"];
       http14 [address = "http://210.x.x.3"];
   }
-
+  network ids {
+      mysql4 [address = "210.x.x.2"];
+      http15 [address = "http://210.x.x.3"];
+  }
  
 }
 @enduml
