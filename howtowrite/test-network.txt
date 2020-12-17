@@ -1,0 +1,15 @@
+@startuml
+nwdiag {
+  network ids {
+
+      redis [address = "210.x.x.1"];
+      mysql [address = "210.x.x.2"];
+      http1 [address = "210.x.x.3"];
+      redis3 [address = "210.x.x.1"];
+      mysql2 [address = "210.x.x.2"];
+      http14 [address = "http://210.x.x.3"];
+  }
+
+ 
+}
+@enduml
