@@ -31,6 +31,6 @@ ConfigCenter --> VersionableObject
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/nio/rpc.txt)
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/test-network.txt)
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/json.txt)
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/1.txt)
+![ar](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/wmenjoy/awesome-knowleges/master/howtowrite/a.txt)
 
 
