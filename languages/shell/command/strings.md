@@ -2,12 +2,29 @@
 
 
 ## 1.命令简介
-======
 
 strings 命令是二进制工具集 GNU Binutils 的一员，用于打印文件中可打印字符串，文件可以是文本文件（test.c），但一般用于打印二进制目标文件、库或可执行文件中的可打印字符。字符串默认至少是 4 个或更多可打印字符的任意序列，可使用选项改变字符串最小长度。
+  >> DESCRIPTION         top
+       For each file given, GNU strings prints the printable character
+       sequences that are at least 4 characters long (or the number
+       given with the options below) and are followed by an unprintable
+       character.
+
+       Depending upon how the strings program was configured it will
+       default to either displaying all the printable sequences that it
+       can find in each file, or only those sequences that are in
+       loadable, initialized data sections.  If the file type is
+       unrecognizable, or if strings is reading from stdin then it will
+       always display all of the printable sequences that it can find.
+
+       For backwards compatibility any file that occurs after a command-
+       line option of just - will also be scanned in full, regardless of
+       the presence of any -d option.
+
+       strings is mainly useful for determining the contents of non-text
+       files.
 
 ## 2.命令格式
-======
 
 ```bash
 -a, --all, -
@@ -46,7 +63,7 @@ strings 命令是二进制工具集 GNU Binutils 的一员，用于打印文件�
 ```
 
 ## 4.常用示例
-======
+
 
 （1）打印可执行文件中的所有可读字符串。
 
@@ -101,10 +118,10 @@ GLIBC_PRIVATE
 
 * * *
 
-参考文献
-====
+## 参考文献
 
-\[1\] strings manual  
-\[2\] GNU Binutils
+
+\[1\] [strings(1) - Linux manual page](https://man7.org/linux/man-pages/man1/strings.1.html)
+\[2\] [Binutils - GNU Project - Free Software Foundation](https://www.gnu.org/software/binutils/)
 
 
