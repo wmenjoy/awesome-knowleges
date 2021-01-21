@@ -121,7 +121,7 @@ GLIBC_PRIVATE
 ## 参考文献
 
 
-\[1\] [strings(1) - Linux manual page](https://man7.org/linux/man-pages/man1/strings.1.html)
-\[2\] [Binutils - GNU Project - Free Software Foundation](https://www.gnu.org/software/binutils/)
+1. [strings(1) - Linux manual page](https://man7.org/linux/man-pages/man1/strings.1.html)
+2. [Binutils - GNU Project - Free Software Foundation](https://www.gnu.org/software/binutils/)
 
 
