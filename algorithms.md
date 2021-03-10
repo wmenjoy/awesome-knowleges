@@ -1,2 +1,2 @@
 ## 一致性算法
-![一致性算法协议](https://p1-tt.byteimg.com/origin/pgc-image/SKRzMI01C4MQVi?from=pc)
+![超详细解析 | 一致性协议算法-2PC、3PC、Paxos、Raft、ZAB、NWR](https://www.toutiao.com/a6937603145719611941/)
