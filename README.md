@@ -29,7 +29,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 有用的shell|1. [tomcat 启动脚本](https://github.com/apache/tomcat/blob/master/bin/catalina.sh)</br>2. [centos:常用方法](https://github.com/seanhess/centos/blob/master/library.sh) </br>3. [Linux上，最常用的一批命令解析](https://juejin.im/post/5d134fbfe51d4510727c80d1?utm_source=gold_browser_extension)
 老黄的github|https://github.com/bingoohuang/blog/issues/106
 在线版本|https://repl.it/
-书籍|[Advanced Bash-Scripting Guide](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
+书籍|[Advanced Bash-Scripting Guide](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)</br>[从来没有这么强烈想推荐一个工具](https://mp.weixin.qq.com/s/w0_cur6qrwlcmplDoD1a4w)
 
 ### Go
 
