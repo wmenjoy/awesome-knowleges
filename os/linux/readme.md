@@ -54,6 +54,10 @@
 ## 系统诊断工具
 1. [Systemtap： a tool that allows developers and administrators to write and reuse simple scripts to deeply examine the activities of a live Linux system. Data may be extracted, filtered, and summarized quickly and safely, to enable diagnoses of complex performance or functional problems.](https://www.sourceware.org/systemtap/documentation.html)
 
+##  相关资讯
+1. [TuxURLs – A neat Linux news aggregator](https://tuxurls.com/)
+
+
 ## 参考
 1. [2daygeek](https://www.2daygeek.com/category/monitoring-tools/)
 2. [tty/PTT设备](https://segmentfault.com/a/1190000009082089)
