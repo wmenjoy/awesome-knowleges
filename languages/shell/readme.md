@@ -23,7 +23,11 @@ JQ命令专门处理json 数据可以参考 [JQ Manual](https://stedolan.github.
 ls -al|tee -a 1.output
 
 ```
-
+### 查看真实的内存占用
+```
+du --max-depth=1 --human-readable --no-dereference --one-file-system /var/lib/docker/overlay2
+du -d 1 -h .  ## 这个计算不准确
+```
 ### A Better Linux Command
 参考[此处](https://www.topbug.net/blog/2016/11/28/a-better-ls-command/#more-953)
 ### Linux 录屏命令
