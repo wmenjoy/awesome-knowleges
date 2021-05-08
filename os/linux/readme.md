@@ -53,6 +53,7 @@
 
 ## 系统诊断工具
 1. [Systemtap： a tool that allows developers and administrators to write and reuse simple scripts to deeply examine the activities of a live Linux system. Data may be extracted, filtered, and summarized quickly and safely, to enable diagnoses of complex performance or functional problems.](https://www.sourceware.org/systemtap/documentation.html)
+2. centos7升级内核修改默认启动项[Change GRUB2 default boot target – /dev/blog](https://possiblelossofprecision.net/?p=1334)
 
 ##  相关资讯
 1. [TuxURLs – A neat Linux news aggregator](https://tuxurls.com/)
