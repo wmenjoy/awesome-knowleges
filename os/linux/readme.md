@@ -33,9 +33,6 @@
 1. [Linux Namespace系列（03）：IPC namespace (CLONE_NEWIPC)](https://segmentfault.com/a/1190000006908729)
 1. [Linux Namespace系列（04）：mount namespaces (CLONE_NEWNS)](https://segmentfault.com/a/1190000006912742)
 1. [Linux Namespace系列（05）：pid namespace (CLONE_NEWPID)](https://segmentfault.com/a/1190000006912878)
-
-## 代理
-1. 参考[here](proxy.md)
 3. [Linux Namespace系列（06）：network namespace (CLONE_NEWNET)](https://segmentfault.com/a/1190000006912930)
 4. [Linux Namespace系列（07）：user namespace (CLONE_NEWUSER) (第一部分)](https://segmentfault.com/a/1190000006913195)
 5. [Linux Namespace系列（08）：user namespace (CLONE_NEWUSER) (第二部分)](https://segmentfault.com/a/1190000006913499)
@@ -57,6 +54,10 @@
 ## 系统诊断工具
 1. [Systemtap： a tool that allows developers and administrators to write and reuse simple scripts to deeply examine the activities of a live Linux system. Data may be extracted, filtered, and summarized quickly and safely, to enable diagnoses of complex performance or functional problems.](https://www.sourceware.org/systemtap/documentation.html)
 2. centos7升级内核修改默认启动项[Change GRUB2 default boot target – /dev/blog](https://possiblelossofprecision.net/?p=1334)
+
+## 代理
+
+1. 参考[here](proxy.md)
 
 ##  相关资讯
 1. [TuxURLs – A neat Linux news aggregator](https://tuxurls.com/)
