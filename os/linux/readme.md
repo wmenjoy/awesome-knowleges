@@ -33,10 +33,13 @@
 1. [Linux Namespace系列（03）：IPC namespace (CLONE_NEWIPC)](https://segmentfault.com/a/1190000006908729)
 1. [Linux Namespace系列（04）：mount namespaces (CLONE_NEWNS)](https://segmentfault.com/a/1190000006912742)
 1. [Linux Namespace系列（05）：pid namespace (CLONE_NEWPID)](https://segmentfault.com/a/1190000006912878)
-1. [Linux Namespace系列（06）：network namespace (CLONE_NEWNET)](https://segmentfault.com/a/1190000006912930)
-1. [Linux Namespace系列（07）：user namespace (CLONE_NEWUSER) (第一部分)](https://segmentfault.com/a/1190000006913195)
-1. [Linux Namespace系列（08）：user namespace (CLONE_NEWUSER) (第二部分)](https://segmentfault.com/a/1190000006913499)
-1. [Linux Namespace系列（09）：利用Namespace创建一个简单可用的容器](https://segmentfault.com/a/1190000006913509)
+
+## 代理
+1. 参考[here](proxy.md)
+3. [Linux Namespace系列（06）：network namespace (CLONE_NEWNET)](https://segmentfault.com/a/1190000006912930)
+4. [Linux Namespace系列（07）：user namespace (CLONE_NEWUSER) (第一部分)](https://segmentfault.com/a/1190000006913195)
+5. [Linux Namespace系列（08）：user namespace (CLONE_NEWUSER) (第二部分)](https://segmentfault.com/a/1190000006913499)
+6. [Linux Namespace系列（09）：利用Namespace创建一个简单可用的容器](https://segmentfault.com/a/1190000006913509)
 
 ## cgroup
 
