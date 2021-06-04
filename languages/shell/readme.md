@@ -34,6 +34,9 @@ du -d 1 -h .  ## 这个计算不准确
 
 script
 
+## 混淆工具
+1. [Bashfuscator/Bashfuscator: A fully configurable and extendable Bash obfuscation framework. This tool is intended to help both red team and blue team.](https://github.com/Bashfuscator/Bashfuscator)
+
 ##  参考
 
 1. [命令行工具](https://juejin.im/post/5d89899ef265da03a95076fb?utm_source=gold_browser_extension)
