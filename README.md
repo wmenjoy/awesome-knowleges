@@ -98,6 +98,7 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 |:--:|:--:|:--:|
 |代理|[proxy](proxy/proxy.md)|
 |git|[git技术干货](https://liyangyang.blog.csdn.net/article/details/100939749)<br/>[Git - 使用git不知道内部实现机制怎么行](https://liyangyang.blog.csdn.net/article/details/101035399)<br/>[git 是什么](https://blog.csdn.net/CSDN___LYY/article/details/81300411)<br>[git diff ](https://blog.csdn.net/CSDN___LYY/article/details/102555882)<br>[Git从入门到放不下](http://dockone.io/article/9277)|
+|vim|[Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)|
 
 ## 架构
 
