@@ -29,3 +29,4 @@ kubeForwardChain utiliptables.Chain = "KUBE-FORWARD"
 ## 参考
 1. [k8s iptables_bijiarong8928的博客-CSDN博客](https://blog.csdn.net/bijiarong8928/article/details/100964459)
 2. [iptables 的mangle表_a_tu_的专栏-CSDN博客_mangle](https://blog.csdn.net/a_tu_/article/details/79359341)
+3. [看过最详细的Kube-proxy的iptables模式原理详解_zhangxiangui40542的专栏-CSDN博客_kube-mark-masq](https://blog.csdn.net/zhangxiangui40542/article/details/79486995)
