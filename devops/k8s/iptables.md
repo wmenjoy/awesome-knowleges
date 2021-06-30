@@ -25,6 +25,27 @@ KubeMarkDropChain utiliptables.Chain = "KUBE-MARK-DROP"    /*对于符合条件�
 // the kubernetes forward chain
 kubeForwardChain utiliptables.Chain = "KUBE-FORWARD"
 ```
+
+## 重置网络
+```
+kubeadm reset
+systemctl stop kubelet
+systemctl stop docker
+
+ifconfig cni0 down
+ifconfig flannel.1 down
+ifconfig del flannel.1
+ifconfig del cni0
+
+ip link del flannel.1
+ip link del cni0
+
+yum install bridge-utils
+brctl delbr flannel.1
+brctl delbr cni0
+```
+
+## 参考
 ![image](https://user-images.githubusercontent.com/9961069/123912166-45e3e700-d9af-11eb-9d6a-3d354af8a353.png)## 参考
 1. [k8s iptables_bijiarong8928的博客-CSDN博客](https://blog.csdn.net/bijiarong8928/article/details/100964459)
 2. [iptables 的mangle表_a_tu_的专栏-CSDN博客_mangle](https://blog.csdn.net/a_tu_/article/details/79359341)
