@@ -3,7 +3,7 @@
 ## 基础知识
 
 ### 网络
-1. [iptables](iptables.md)
+1. [cni](iptables.md)
 
 ## 架构
 
