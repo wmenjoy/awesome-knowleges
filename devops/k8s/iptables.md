@@ -45,6 +45,9 @@ brctl delbr flannel.1
 brctl delbr cni0
 ```
 
+## 网络问题诊断
+1. [全网最详细的 K8s Service 不能访问排查流程 - 简书](https://www.jianshu.com/p/9ff1f21fd788)
+
 ## 参考
 ![image](https://user-images.githubusercontent.com/9961069/123912166-45e3e700-d9af-11eb-9d6a-3d354af8a353.png)## 参考
 1. [k8s iptables_bijiarong8928的博客-CSDN博客](https://blog.csdn.net/bijiarong8928/article/details/100964459)
