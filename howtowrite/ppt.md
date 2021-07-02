@@ -19,5 +19,9 @@
 2. Clear, but less info
 3. To busy
 4. Clear & informative
+
+
+## ppt作图
+1. [手画图](https://excalidraw.com/)
 ## 参考
 1. [The power of white space | Interaction Design Foundation (IxDF)](https://www.interaction-design.org/literature/article/the-power-of-white-space)
