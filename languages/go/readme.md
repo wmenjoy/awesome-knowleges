@@ -27,6 +27,8 @@
 
 https://juejin.im/post/5d350e70f265da1b897b0cbe?utm_source=gold_browser_extension
 
+## go语言模式
+1. [Go 语言 | 酷 壳 - CoolShell](https://coolshell.cn/category/proglanguage/go-%e8%af%ad%e8%a8%80)
 
 ## 其他
 [gochart](https://github.com/zieckey/gochart)
