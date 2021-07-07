@@ -15,17 +15,18 @@
 4. [Linux虚拟文件系统](https://segmentfault.com/a/1190000008476809)
 5. [Linux OOM Killer](https://segmentfault.com/a/1190000008268803)
 
+
 ## 进程
 
 ### tty
 1. [Linux session和进程组概述](https://segmentfault.com/a/1190000006917884)
 
 
-## 文件系统
+## 文件系统与磁盘管理
 1. [Btrfs文件系统之subvolume与snapshot](https://segmentfault.com/a/1190000008605135)
 2. [Linux文件系统之aufs](https://segmentfault.com/a/1190000008489207)
 3. [Linux常见文件系统对比](https://segmentfault.com/a/1190000008481493)
-
+4. [磁盘](disk.md)
 ## NameSpace
 
 1. [Linux Namespace系列（01）：Namespace概述](https://segmentfault.com/a/1190000006908272)
