@@ -139,7 +139,7 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 13. [draveness](https://github.com/draveness/analyze)
 14. [架构师修炼之道](https://tianmingxing.com/)
 15. [SmartKeyerror/Psyduck: Record CS knowlegement with XMind, version 2.0. 使用 XMind 记录 Linux 操作系统，网络，C++，Golang 以及数据库的一些设计](https://github.com/SmartKeyerror/Psyduck#fire-Linux-Network-Programing)
-16. 
+16. [SmartKeyerror/ZeroMind: Record CS knowledge with XMind](https://github.com/SmartKeyerror/ZeroMind#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
 
 ## 编程网站
