@@ -39,6 +39,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 
 ## 算法
 1. [算法可视化](https://github.com/algorithm-visualizer/algorithm-visualizer)
+2. [SmartKeyerror/Snorlax: 👻 Explore data structure & algorithm with C/C++.总结常用的数据结构和算法，包含图论，以及 Leetcode 刷题记录](https://github.com/SmartKeyerror/Snorlax)
 
 ## 操作系统
 ### Linux
@@ -137,6 +138,8 @@ kafka|[入门](https://blog.csdn.net/CSDN___LYY/article/details/85697252)<br>[�
 12. [后端](https://www.dazhuanlan.com/backend/page/14978/)
 13. [draveness](https://github.com/draveness/analyze)
 14. [架构师修炼之道](https://tianmingxing.com/)
+15. [SmartKeyerror/Psyduck: Record CS knowlegement with XMind, version 2.0. 使用 XMind 记录 Linux 操作系统，网络，C++，Golang 以及数据库的一些设计](https://github.com/SmartKeyerror/Psyduck#fire-Linux-Network-Programing)
+16. 
 
 
 ## 编程网站
