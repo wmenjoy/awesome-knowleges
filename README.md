@@ -30,6 +30,7 @@ maven|[Maven技巧](https://github.com/wmenjoy/awesome-knowleges/blob/master/lan
 老黄的github|https://github.com/bingoohuang/blog/issues/106
 在线版本|https://repl.it/
 书籍|[Advanced Bash-Scripting Guide](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)</br>[从来没有这么强烈想推荐一个工具](https://mp.weixin.qq.com/s/w0_cur6qrwlcmplDoD1a4w)
+model unx|[ibraheemdev/modern-unix: A collection of modern/faster/saner alternatives to common unix commands.](https://github.com/ibraheemdev/modern-unix)
 
 ### Go
 
