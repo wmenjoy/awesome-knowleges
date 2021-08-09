@@ -11,3 +11,5 @@
 [StackExchangee](https://stackexchange.com/)
 
 [在 Asciidoc 文档中使用 latex](https://www.dazhuanlan.com/2019/08/24/5d6118f955a9a/)
+
+[markdown ppt| Slidev](https://cn.sli.dev/guide/navigation.html#navigation-bar)
