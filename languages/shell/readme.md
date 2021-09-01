@@ -40,7 +40,7 @@ script
 
 ## 日常生活
 1.  查看天气： curl https://wttr.in curl https://wttr.in/London  curl https://wttr.in/Mumbai curl https://v2.wttr.in
-2.  查看地图： 
+2.  其他https://github.com/chubin/awesome-console-services
 
 ##  参考
 
