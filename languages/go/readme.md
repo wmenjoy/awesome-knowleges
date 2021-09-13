@@ -8,6 +8,9 @@
 6. go routing
 7. 反射
 7. 原理
+
+## 内存模型
+1. [research!rsc: Memory Models](https://research.swtch.com/mm)
 ## 编程规范
 [Uber go 语言编程规范](http://dockone.io/article/9331)
 [Go 语言实践：编写可维护的程序的建议](https://juejin.im/post/5e0ab70ef265da5d0f098988)
