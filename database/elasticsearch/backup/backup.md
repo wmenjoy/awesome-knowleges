@@ -7,8 +7,7 @@
    待归档文件同步完成，在归档elasticsearch执恢复操作。恢复索引
 
 ## 准备
-### 1. 准备Elasticsearch各个节点可以共同访问的公共目录
-#### NFS方案
+### 1. 准备nfs server
 ``` bash
 yum install -y nfs-utils
 systemctl enable rpcbind.service
@@ -21,6 +20,18 @@ echo /data/elasticsearch/backup 10.64.62.0/24(rw,sync,all_squash) > /etc/exports
 exportfs -r
 # 查看是否生效
 exportfs -s
+```
+### 2. 准备Elasticsearch各个节点可以共同访问的公共目录
+```bash
+yum -y install showmount
+#开启服务：
+systemctl enable rpcbind.service
+systemctl start rpcbind.servic
+#查看nfs挂载信息
+showmount -e 10.4.7.22
+
+
+mount -t nfs 10.4.7.22:/data/db/elasticsearch/backup /data/es-backups/
 ```
 
 ### 2. 配置Elasticsearch的公共目录
