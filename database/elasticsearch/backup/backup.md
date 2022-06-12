@@ -9,3 +9,10 @@
 ## 准备
 ### 1. 准备Elasticsearch各个节点可以共同访问的公共目录
 ### 2. 配置Elasticsearch的公共目录
+### 3. 注册repository到ElasticSearch
+
+## 执行备份
+
+## 同步镜像文件
+
+## 执行恢复操作
