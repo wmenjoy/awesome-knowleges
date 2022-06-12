@@ -52,7 +52,24 @@ PUT _snapshot/bjca_backup
 }
 ```
 ## 执行备份
+###1. 发起备份申请
+
+###
+
 
 ## 同步镜像文件
 
 ## 执行恢复操作
+```
+POST /_snapshot/my_backup/snapshot_1/_restore
+{
+  "indices": "${}",
+  "index_settings": {
+    "index.number_of_replicas": 0
+  },
+  "ignore_index_settings": [
+    "index.refresh_interval"
+  ]
+}
+```
+
