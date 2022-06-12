@@ -53,7 +53,14 @@ PUT _snapshot/bjca_backup
 ```
 ## 执行备份
 ###1. 发起备份申请
-
+```
+PUT /_snapshot/my_backup/snapshot_1
+{
+  "indices": "${indexName1},${indexName2}",
+  "ignore_unavailable": true,
+  "include_global_state": false
+}
+```
 ###
 
 
@@ -63,7 +70,7 @@ PUT _snapshot/bjca_backup
 ```
 POST /_snapshot/my_backup/snapshot_1/_restore
 {
-  "indices": "${}",
+  "indices": "${indexName1},${indexName2}",
   "index_settings": {
     "index.number_of_replicas": 0
   },
