@@ -90,3 +90,7 @@ POST /_snapshot/my_backup/snapshot_1/_restore
 }
 ```
 
+## 常见问题处理
+1. 如何删除备份镜像？
+2. 如何监控备份进度？
+3. 如何监控恢复？
