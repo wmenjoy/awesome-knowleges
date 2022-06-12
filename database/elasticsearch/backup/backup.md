@@ -30,7 +30,16 @@ path.repo: ["/data/elasticsearch/backup"]
 ```
 
 ### 3. 注册repository到ElasticSearch
-
+```
+PUT _snapshot/my_backup 
+{
+    "type": "fs", 
+    "settings": {
+        "location": "/mnt/backup",
+        "compress": true
+    }
+}
+```
 ## 执行备份
 
 ## 同步镜像文件
