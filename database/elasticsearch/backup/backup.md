@@ -50,6 +50,7 @@ PUT _snapshot/bjca_backup
         "compress": true
     }
 }
+
 ```
 ## 执行备份
 ###1. 发起备份申请
