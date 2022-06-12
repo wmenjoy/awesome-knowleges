@@ -60,6 +60,12 @@ PUT /_snapshot/my_backup/snapshot_1
   "ignore_unavailable": true,
   "include_global_state": false
 }
+
+###
+```
+GET _snapshot/my_backup/snapshot_name/_status
+```
+
 ```
 ###
 
