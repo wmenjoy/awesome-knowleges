@@ -24,6 +24,11 @@ exportfs -s
 ```
 
 ### 2. 配置Elasticsearch的公共目录
+修改elasticsearch的配置文件elasticsearch.yml
+``` properties
+path.repo: ["/data/elasticsearch/backup"]
+```
+
 ### 3. 注册repository到ElasticSearch
 
 ## 执行备份
