@@ -31,11 +31,11 @@ path.repo: ["/data/elasticsearch/backup"]
 
 ### 3. 注册repository到ElasticSearch
 ```
-PUT _snapshot/my_backup 
+PUT _snapshot/bjca_backup 
 {
     "type": "fs", 
     "settings": {
-        "location": "/mnt/backup",
+        "location": "/data/elasticsearch/backup",
         "compress": true
     }
 }
