@@ -8,6 +8,7 @@
 
 ## 准备
 ### 1. 准备nfs server
+nfsserver=10.
 ``` bash
 yum install -y nfs-utils
 systemctl enable rpcbind.service
@@ -28,6 +29,7 @@ yum -y install showmount
 systemctl enable rpcbind.service
 systemctl start rpcbind.servic
 #查看nfs挂载信息
+nfsServer
 showmount -e 10.4.7.22
 
 
@@ -39,6 +41,11 @@ mount -t nfs 10.4.7.22:/data/db/elasticsearch/backup /data/es-backups/
 ``` properties
 path.repo: ["/data/elasticsearch/backup"]
 ```
+轮流重启elasticsearch
+```
+
+```
+
 
 ### 3. 注册repository到ElasticSearch
 ```
