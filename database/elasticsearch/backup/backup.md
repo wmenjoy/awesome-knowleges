@@ -62,12 +62,15 @@ PUT /_snapshot/my_backup/snapshot_1
   "include_global_state": false
 }
 
-###
-```
+# 查看状态
 GET _snapshot/my_backup/snapshot_name/_status
 ```
+ // 备份创建好之后，在共享目录/root/backup里是这样的：
+-rw-r--r-- 1 root root   31 12月 15 22:14 index
+drwxr-xr-x 3 root root 4096 12月 15 22:14 indices
+-rw-r--r-- 1 root root   83 12月 15 22:14 metadata-snapshot_name
+-rw-r--r-- 1 root root  181 12月 15 22:14 snapshot-snapshot_name
 
-```
 ###
 
 
