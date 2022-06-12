@@ -8,6 +8,21 @@
 
 ## 准备
 ### 1. 准备Elasticsearch各个节点可以共同访问的公共目录
+#### NFS方案
+``` bash
+yum install -y nfs-utils
+systemctl enable rpcbind.service
+systemctl enable nfs-server.service
+systemctl start rpcbind.service
+systemctl start nfs-server.service
+
+mkdir /data/elasticsearch/backup
+echo /data/elasticsearch/backup 10.64.62.0/24(rw,sync,all_squash) > /etc/exports
+exportfs -r
+# 查看是否生效
+exportfs -s
+```
+
 ### 2. 配置Elasticsearch的公共目录
 ### 3. 注册repository到ElasticSearch
 
